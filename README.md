@@ -3,6 +3,7 @@ Recipe app designed with Ruby on Rails
 <<<<<<< HEAD
 test git
 John commi
+Hello test comit
 =======
 
 Designed by: Justin Wright, Jacob Greene, John Lee, Jacob Marlowe, and Loi Phung.
