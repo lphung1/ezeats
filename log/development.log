@@ -1315,6 +1315,7 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 24ms (Views: 23.7ms | ActiveRecord: 0.0ms)
 
 
+<<<<<<< HEAD
 Started GET "/" for 152.15.113.5 at 2017-11-01 19:58:57 +0000
 Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by HomeController#index as HTML
@@ -1517,3 +1518,155 @@ Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0
 Processing by FoodsController#index as HTML
   Rendered foods/index.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+=======
+Started GET "/" for 66.26.169.202 at 2017-11-01 13:47:06 +0000
+Cannot render console from 66.26.169.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 565ms (Views: 556.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/contact.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 66.26.169.202 at 2017-11-01 13:47:07 +0000
+Cannot render console from 66.26.169.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/create.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 66.26.169.202 at 2017-11-01 13:47:07 +0000
+Cannot render console from 66.26.169.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drinks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 66.26.169.202 at 2017-11-01 13:47:07 +0000
+Cannot render console from 66.26.169.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/foods.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 66.26.169.202 at 2017-11-01 13:47:07 +0000
+Cannot render console from 66.26.169.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 66.26.169.202 at 2017-11-01 13:47:07 +0000
+Cannot render console from 66.26.169.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 66.26.169.202 at 2017-11-01 13:47:07 +0000
+Cannot render console from 66.26.169.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/search.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 66.26.169.202 at 2017-11-01 13:47:07 +0000
+Cannot render console from 66.26.169.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 66.26.169.202 at 2017-11-01 13:47:07 +0000
+Cannot render console from 66.26.169.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 66.26.169.202 at 2017-11-01 13:47:07 +0000
+Cannot render console from 66.26.169.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 66.26.169.202 at 2017-11-01 13:47:07 +0000
+Cannot render console from 66.26.169.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/contact.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 66.26.169.202 at 2017-11-01 13:47:07 +0000
+Cannot render console from 66.26.169.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/create.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 66.26.169.202 at 2017-11-01 13:47:07 +0000
+Cannot render console from 66.26.169.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drinks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 66.26.169.202 at 2017-11-01 13:47:07 +0000
+Cannot render console from 66.26.169.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/foods.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 66.26.169.202 at 2017-11-01 13:47:07 +0000
+Cannot render console from 66.26.169.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/search.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 66.26.169.202 at 2017-11-01 13:47:07 +0000
+Cannot render console from 66.26.169.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 66.26.169.202 at 2017-11-01 13:47:07 +0000
+Cannot render console from 66.26.169.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 66.26.169.202 at 2017-11-01 13:47:07 +0000
+Cannot render console from 66.26.169.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/create" for 66.26.169.202 at 2017-11-01 13:47:17 +0000
+Cannot render console from 66.26.169.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CreateController#index as HTML
+  Rendered create/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 33ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 66.26.169.202 at 2017-11-01 13:47:21 +0000
+Cannot render console from 66.26.169.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 28ms (Views: 27.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 152.15.113.10 at 2017-11-01 20:12:51 +0000
+Cannot render console from 152.15.113.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 443ms (Views: 431.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/contact.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 152.15.113.10 at 2017-11-01 20:12:53 +0000
+Cannot render console from 152.15.113.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/create.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 152.15.113.10 at 2017-11-01 20:12:54 +0000
+Cannot render console from 152.15.113.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drinks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 152.15.113.10 at 2017-11-01 20:12:54 +0000
+Cannot render console from 152.15.113.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/foods.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 152.15.113.10 at 2017-11-01 20:12:54 +0000
+Cannot render console from 152.15.113.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/contact.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 152.15.113.10 at 2017-11-01 20:12:54 +0000
+Cannot render console from 152.15.113.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/search.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 152.15.113.10 at 2017-11-01 20:12:54 +0000
+Cannot render console from 152.15.113.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 152.15.113.10 at 2017-11-01 20:12:54 +0000
+Cannot render console from 152.15.113.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 152.15.113.10 at 2017-11-01 20:12:54 +0000
+Cannot render console from 152.15.113.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/create.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 152.15.113.10 at 2017-11-01 20:12:55 +0000
+Cannot render console from 152.15.113.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drinks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 152.15.113.10 at 2017-11-01 20:12:55 +0000
+Cannot render console from 152.15.113.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/search.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 152.15.113.10 at 2017-11-01 20:12:55 +0000
+Cannot render console from 152.15.113.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/foods.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 152.15.113.10 at 2017-11-01 20:12:55 +0000
+Cannot render console from 152.15.113.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 152.15.113.10 at 2017-11-01 20:12:55 +0000
+Cannot render console from 152.15.113.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 152.15.113.10 at 2017-11-01 20:12:55 +0000
+Cannot render console from 152.15.113.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+>>>>>>> dc80f6f3d53ae35ce97089a702234b1e7cfed38d
