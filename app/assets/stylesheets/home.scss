@@ -44,37 +44,3 @@ footer a:hover{ //Italicizes 'Contact Us' in footer when hovered over by mouse.
     background-color: #ddd;
     color: black;
 }
-
-
-body{
-    background-color: DarkOrange;
-}
-
-h1{
-    font-size: 40px;
-    text-align: center;
-}
-
-ul{
-    list-style-type: none;
-}
-
-li{
-	float: left;
-}
-
-li a{
-	display: block;
-	color: red;
-	text-decoration: underline;
-	font-style: italic;
-	text-align: center;
-	font-size: 36px;
-	padding: 16px 18px;
-}
-li a:hover{
-	background-color: darkred;
-}
-.active{
-	background-color:red;
-}
