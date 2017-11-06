@@ -2,3 +2,35 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body{
+    background-color: DarkOrange;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+	float: left;
+}
+
+li a{
+	display: block;
+	color: red;
+	text-decoration: underline;
+	font-style: italic;
+	text-align: center;
+	font-size: 36px;
+	padding: 16px 18px;
+}
+li a:hover{
+	background-color: darkred;
+}
+.active{
+	background-color:red;
+}
