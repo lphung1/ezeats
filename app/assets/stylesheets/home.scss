@@ -8,6 +8,9 @@ a { //Turns off link underlines.
     text-decoration: none;
 }
 
+body { //Test for body background color.
+    background-color: yellow;
+}
 
 footer { //Centers footer text.
     text-align: center;
@@ -17,36 +20,27 @@ footer a:hover{ //Italicizes 'Contact Us' in footer when hovered over by mouse.
     font-style: italic;
 }
 
-
-body{
-    background-color: DarkOrange;
+.nav { //Test color overlay.
+    overflow: hidden;
+    background-color: #333;
 }
 
-h1{
-    font-size: 40px;
+.nav li { //Text formatting for list elements in nav bar.
+    float: left;
+    display: block;
+    color: #f2f2f2;
     text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
 }
 
-ul{
-    list-style-type: none;
+.nav li.active { //Color of active menu item.
+    background-color: #4CAF50;
+    color: white;
 }
 
-li{
-	float: left;
-}
-
-li a{
-	display: block;
-	color: red;
-	text-decoration: underline;
-	font-style: italic;
-	text-align: center;
-	font-size: 36px;
-	padding: 16px 18px;
-}
-li a:hover{
-	background-color: darkred;
-}
-.active{
-	background-color:red;
+.nav li:hover { //Color of menu item when hovered over by mouse.
+    background-color: #ddd;
+    color: black;
 }
