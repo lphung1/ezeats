@@ -10648,6 +10648,7 @@ ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.8ms)
 
 
+<<<<<<< HEAD
 Started GET "/" for 69.132.113.185 at 2017-11-08 00:38:52 +0000
 Cannot render console from 69.132.113.185! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
@@ -10878,6 +10879,32 @@ Started GET "/assets/stylesheets/home.css" for 152.15.113.11 at 2017-11-08 16:45
 Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 
 ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home.css"):
+=======
+Started GET "/" for 208.82.1.242 at 2017-11-07 15:58:56 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 552ms (Views: 541.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/create.self-b414c01449c4b9034d46d27d002e02e981ca58b4075ca5e3a2b07423138a0cab.css?body=1" for 208.82.1.242 at 2017-11-07 15:58:57 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/drinks.self-3d6c7b2deb587d7a15f49622ce9dbe70ce81aa5bd014051c74e221954ecd0699.css?body=1" for 208.82.1.242 at 2017-11-07 15:58:57 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/foods.self-4c6be1a703afae42ee429c6157b94aafb1b89717fe8431beecce3063662b17b9.css?body=1" for 208.82.1.242 at 2017-11-07 15:58:57 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/stylesheets/home.scss" for 208.82.1.242 at 2017-11-07 15:58:57 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home.scss"):
+>>>>>>> 888fc51e5aaa5ca8b5ee73e43edd6d13ea844cf2
   actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
@@ -10901,6 +10928,7 @@ ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home
   rack (1.6.8) lib/rack/lock.rb:17:in `call'
   rack (1.6.8) lib/rack/content_length.rb:15:in `call'
   rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -10996,6 +11024,28 @@ Started GET "/assets/stylesheets/home.css" for 152.15.113.11 at 2017-11-08 16:45
 Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 
 ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home.css"):
+=======
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (65.6ms)
+
+
+Started GET "/assets/search.self-9fa31bef622d90d9a7fd4ade2b19ca86fbaf85ca029e908e3077a884f24251dc.css?body=1" for 208.82.1.242 at 2017-11-07 15:58:57 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/stylesheets/home.scss" for 208.82.1.242 at 2017-11-07 15:58:57 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home.scss"):
+>>>>>>> 888fc51e5aaa5ca8b5ee73e43edd6d13ea844cf2
   actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
@@ -11019,6 +11069,7 @@ ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home
   rack (1.6.8) lib/rack/lock.rb:17:in `call'
   rack (1.6.8) lib/rack/content_length.rb:15:in `call'
   rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -11048,6 +11099,54 @@ Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.
 
 ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home.css"):
   actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+=======
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.7ms)
+
+
+Started GET "/drinks" for 208.82.1.242 at 2017-11-07 15:58:59 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+AbstractController::ActionNotFound (The action 'index' could not be found for DrinksController):
+  actionpack (4.2.5) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+>>>>>>> 888fc51e5aaa5ca8b5ee73e43edd6d13ea844cf2
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
@@ -11070,6 +11169,7 @@ ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home
   rack (1.6.8) lib/rack/lock.rb:17:in `call'
   rack (1.6.8) lib/rack/content_length.rb:15:in `call'
   rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -11094,6 +11194,27 @@ Started GET "/assets/stylesheets/home.css" for 152.15.113.11 at 2017-11-08 20:59
 Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 
 ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home.css"):
+=======
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 208.82.1.242 at 2017-11-07 16:09:32 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/stylesheets/home.scss" for 208.82.1.242 at 2017-11-07 16:09:32 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home.scss"):
+>>>>>>> 888fc51e5aaa5ca8b5ee73e43edd6d13ea844cf2
   actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
@@ -11117,6 +11238,7 @@ ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home
   rack (1.6.8) lib/rack/lock.rb:17:in `call'
   rack (1.6.8) lib/rack/content_length.rb:15:in `call'
   rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -11138,6 +11260,29 @@ Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.0ms)
 
 Started GET "/assets/stylesheets/home.scss" for 152.15.113.11 at 2017-11-08 20:59:51 +0000
 Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (53.9ms)
+
+
+Started GET "/search" for 208.82.1.242 at 2017-11-07 16:09:38 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/stylesheets/home.scss" for 208.82.1.242 at 2017-11-07 16:09:38 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+>>>>>>> 888fc51e5aaa5ca8b5ee73e43edd6d13ea844cf2
 
 ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home.scss"):
   actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -11163,6 +11308,7 @@ ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home
   rack (1.6.8) lib/rack/lock.rb:17:in `call'
   rack (1.6.8) lib/rack/content_length.rb:15:in `call'
   rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -11179,6 +11325,24 @@ Started GET "/contact" for 152.15.113.11 at 2017-11-08 20:59:54 +0000
 Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 
 AbstractController::ActionNotFound (The action 'index' could not be found for ContactController):
+=======
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (39.8ms)
+
+
+Started GET "/foods" for 208.82.1.242 at 2017-11-07 16:09:46 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+AbstractController::ActionNotFound (The action 'index' could not be found for FoodsController):
+>>>>>>> 888fc51e5aaa5ca8b5ee73e43edd6d13ea844cf2
   actionpack (4.2.5) lib/abstract_controller/base.rb:132:in `process'
   actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
   actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
@@ -11231,6 +11395,7 @@ AbstractController::ActionNotFound (The action 'index' could not be found for Co
   rack (1.6.8) lib/rack/lock.rb:17:in `call'
   rack (1.6.8) lib/rack/content_length.rb:15:in `call'
   rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -11328,6 +11493,27 @@ Started GET "/assets/stylesheets/home.css" for 152.15.113.11 at 2017-11-08 21:00
 Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 
 ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home.css"):
+=======
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 208.82.1.242 at 2017-11-07 16:56:06 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (47.2ms)
+Completed 200 OK in 101ms (Views: 100.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/stylesheets/home.scss" for 208.82.1.242 at 2017-11-07 16:56:06 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home.scss"):
+>>>>>>> 888fc51e5aaa5ca8b5ee73e43edd6d13ea844cf2
   actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
@@ -11351,6 +11537,7 @@ ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home
   rack (1.6.8) lib/rack/lock.rb:17:in `call'
   rack (1.6.8) lib/rack/content_length.rb:15:in `call'
   rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -11365,6 +11552,22 @@ ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home
 
 Started GET "/assets/stylesheets/home.scss" for 152.15.113.11 at 2017-11-08 21:00:01 +0000
 Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (73.2ms)
+
+
+Started GET "/assets/stylesheets/home.scss" for 208.82.1.242 at 2017-11-07 16:56:07 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+>>>>>>> 888fc51e5aaa5ca8b5ee73e43edd6d13ea844cf2
 
 ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home.scss"):
   actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -11390,6 +11593,7 @@ ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home
   rack (1.6.8) lib/rack/lock.rb:17:in `call'
   rack (1.6.8) lib/rack/content_length.rb:15:in `call'
   rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -11411,6 +11615,29 @@ Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.0ms)
 
 Started GET "/assets/stylesheets/home.scss" for 152.15.113.11 at 2017-11-08 21:00:02 +0000
 Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.3ms)
+
+
+Started GET "/foods" for 208.82.1.242 at 2017-11-07 16:56:09 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodsController#index as HTML
+  Rendered foods/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/stylesheets/home.scss" for 208.82.1.242 at 2017-11-07 16:56:09 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+>>>>>>> 888fc51e5aaa5ca8b5ee73e43edd6d13ea844cf2
 
 ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home.scss"):
   actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -11436,6 +11663,7 @@ ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home
   rack (1.6.8) lib/rack/lock.rb:17:in `call'
   rack (1.6.8) lib/rack/content_length.rb:15:in `call'
   rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -11459,6 +11687,31 @@ Started GET "/assets/stylesheets/home.css" for 152.15.113.11 at 2017-11-08 21:00
 Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 
 ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home.css"):
+=======
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (44.1ms)
+
+
+Started GET "/foods" for 208.82.1.242 at 2017-11-07 16:56:53 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodsController#index as HTML
+  Rendered foods/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/stylesheets/home.scss" for 208.82.1.242 at 2017-11-07 16:56:53 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home.scss"):
+>>>>>>> 888fc51e5aaa5ca8b5ee73e43edd6d13ea844cf2
   actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
@@ -11482,6 +11735,7 @@ ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home
   rack (1.6.8) lib/rack/lock.rb:17:in `call'
   rack (1.6.8) lib/rack/content_length.rb:15:in `call'
   rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -11562,6 +11816,31 @@ Started GET "/assets/stylesheets/home.css" for 152.15.113.11 at 2017-11-08 21:00
 Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 
 ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home.css"):
+=======
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (39.4ms)
+
+
+Started GET "/drinks" for 208.82.1.242 at 2017-11-07 16:56:54 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendered drinks/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 38ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/stylesheets/home.scss" for 208.82.1.242 at 2017-11-07 16:56:54 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home.scss"):
+>>>>>>> 888fc51e5aaa5ca8b5ee73e43edd6d13ea844cf2
   actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
@@ -11585,6 +11864,7 @@ ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home
   rack (1.6.8) lib/rack/lock.rb:17:in `call'
   rack (1.6.8) lib/rack/content_length.rb:15:in `call'
   rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -11716,6 +11996,29 @@ Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.0ms)
 
 Started GET "/assets/stylesheets/home.scss" for 152.15.113.11 at 2017-11-08 21:00:23 +0000
 Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (45.5ms)
+
+
+Started GET "/home/index" for 208.82.1.242 at 2017-11-07 16:56:54 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/stylesheets/home.scss" for 208.82.1.242 at 2017-11-07 16:56:55 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+>>>>>>> 888fc51e5aaa5ca8b5ee73e43edd6d13ea844cf2
 
 ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home.scss"):
   actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -11741,6 +12044,7 @@ ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home
   rack (1.6.8) lib/rack/lock.rb:17:in `call'
   rack (1.6.8) lib/rack/content_length.rb:15:in `call'
   rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -11826,8 +12130,165 @@ Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
 
 Started GET "/assets/stylesheets/home.scss" for 152.15.113.11 at 2017-11-08 21:00:27 +0000
 Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (38.1ms)
+
+
+Started GET "/search" for 208.82.1.242 at 2017-11-07 16:56:55 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/stylesheets/home.scss" for 208.82.1.242 at 2017-11-07 16:56:55 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+>>>>>>> 888fc51e5aaa5ca8b5ee73e43edd6d13ea844cf2
 
 ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home.scss"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (39.4ms)
+
+
+Started GET "/search" for 152.15.113.11 at 2017-11-08 21:00:27 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/stylesheets/home.scss" for 152.15.113.11 at 2017-11-08 21:00:27 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (66.2ms)
+
+
+Started GET "/create" for 208.82.1.242 at 2017-11-07 16:56:56 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CreateController#index as HTML
+  Rendered create/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 40ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/stylesheets/home.scss" for 208.82.1.242 at 2017-11-07 16:56:56 +0000
+Cannot render console from 208.82.1.242! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+>>>>>>> 888fc51e5aaa5ca8b5ee73e43edd6d13ea844cf2
+
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home.scss"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.8ms)
+=======
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.4ms)
+>>>>>>> 888fc51e5aaa5ca8b5ee73e43edd6d13ea844cf2
+
+
+Started GET "/" for 152.15.113.11 at 2017-11-08 21:14:47 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 510ms (Views: 498.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ff3abce49b959d70e4243354054d7d7fbc637f33abf727b71c7d257317ee3296.css?body=1" for 152.15.113.11 at 2017-11-08 21:14:48 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/stylesheets/application.css" for 152.15.113.11 at 2017-11-08 21:14:48 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/application.css"):
   actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
@@ -11856,21 +12317,21 @@ ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home
   /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
-  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
-  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
-  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
-  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
-  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (39.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.6ms)
 
 
-Started GET "/search" for 152.15.113.11 at 2017-11-08 21:00:27 +0000
+Started GET "/drinks" for 152.15.113.11 at 2017-11-08 21:14:51 +0000
 Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
-Processing by SearchController#index as HTML
-  Rendered search/index.html.erb within layouts/application (1.0ms)
-Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+Processing by DrinksController#index as HTML
+  Rendered drinks/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/assets/stylesheets/home.scss" for 152.15.113.11 at 2017-11-08 21:00:27 +0000
+Started GET "/assets/stylesheets/home.scss" for 152.15.113.11 at 2017-11-08 21:14:51 +0000
 Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 
 ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home.scss"):
@@ -11903,7 +12364,152 @@ ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home
 
 
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.0ms)
+
+
+Started GET "/foods" for 152.15.113.11 at 2017-11-08 21:14:52 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FoodsController#index as HTML
+  Rendered foods/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/stylesheets/home.scss" for 152.15.113.11 at 2017-11-08 21:14:52 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home.scss"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.3ms)
+
+
+Started GET "/search" for 152.15.113.11 at 2017-11-08 21:14:53 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/stylesheets/home.scss" for 152.15.113.11 at 2017-11-08 21:14:54 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home.scss"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
-  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.7ms)
+
+
+Started GET "/create" for 152.15.113.11 at 2017-11-08 21:14:54 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CreateController#index as HTML
+  Rendered create/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/stylesheets/home.scss" for 152.15.113.11 at 2017-11-08 21:14:55 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/home.scss"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.2ms)
+
+
+Started GET "/contact" for 152.15.113.11 at 2017-11-08 21:14:56 +0000
+Cannot render console from 152.15.113.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactController#index as HTML
+  Rendered contact/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
