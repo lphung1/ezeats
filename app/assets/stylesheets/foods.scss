@@ -12,6 +12,7 @@ body { //Test for body background color.
 
 footer { //Centers footer text.
     text-align: center;
+    font-size: 10;
 }
 
 footer a:hover{ //Italicizes 'Contact Us' in footer when hovered over by mouse.
@@ -26,7 +27,7 @@ footer a:hover{ //Italicizes 'Contact Us' in footer when hovered over by mouse.
 .nav li { //Text formatting for list elements in nav bar.
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #F0FFFF;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -45,4 +46,35 @@ footer a:hover{ //Italicizes 'Contact Us' in footer when hovered over by mouse.
 h2{
     color: black;
     text-align: center;
+}
+
+h3{
+    color: black;
+    text-align: center;
+}
+
+input[type=text] {
+    width: 170px;
+    background-color: GoldenRod;
+    color: black;
+    -webkit-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 80% */
+input[type=text]:focus {
+    width: 80%;
+}
+
+.foodButton{
+    background:url(./images/but.png) no-repeat;
+    cursor:pointer;
+    border:none;
+    width:100px;
+    height:100px;
+}
+
+.foodButton:active 
+{   
+    background:url(./images/but2.png) no-repeat;
 }

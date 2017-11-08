@@ -13,3 +13,29 @@
  *= require_tree .
  *= require_self
  */
+
+input[type=text] {
+    width: 170px;
+    background-color: GoldenRod;
+    color: black;
+    -webkit-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 80% */
+input[type=text]:focus {
+    width: 80%;
+}
+
+.foodButton{
+    background:url(./images/but.png) no-repeat;
+    cursor:pointer;
+    border:none;
+    width:100px;
+    height:100px;
+}
+
+.foodButton:active 
+{   
+    background:url(./images/but2.png) no-repeat;
+}
