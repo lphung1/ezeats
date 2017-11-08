@@ -1,31 +1,31 @@
 /**
-@title home.scss
+@title home.css
 @author The Stake Drivers
 @description   --Since CSS pages can get chaotic, I usually keep everything alphabetical.   -Jake M
 **/
 
-a { //Turns off link underlines.
+a { /*Turns off link underlines.*/
     text-decoration: none;
 }
 
-body { //Test for body background color.
-    background-color: yellow;
+body { /*Test for body background color.*/
+    background-color: white !important;
 }
 
-footer { //Centers footer text.
+footer { /*Centers footer text.*/
     text-align: center;
 }
 
-footer a:hover{ //Italicizes 'Contact Us' in footer when hovered over by mouse.
+footer a:hover{ /*Italicizes 'Contact Us' in footer when hovered over by mouse.*/
     font-style: italic;
 }
 
-.nav { //Test color overlay.
+.nav { /*Test color overlay.*/
     overflow: hidden;
     background-color: #333;
 }
 
-.nav li { //Text formatting for list elements in nav bar.
+.nav li { /*Text formatting for list elements in nav bar.*/
     float: left;
     display: block;
     color: #f2f2f2;
@@ -35,12 +35,12 @@ footer a:hover{ //Italicizes 'Contact Us' in footer when hovered over by mouse.
     font-size: 20px;
 }
 
-.nav li.active { //Color of active menu item.
+.nav .active { /*Color of active menu item.*/
     background-color: #4CAF50;
     color: white;
 }
 
-.nav li:hover { //Color of menu item when hovered over by mouse.
+.nav li:hover { /*Color of menu item when hovered over by mouse.*/
     background-color: #ddd;
     color: black;
 }
