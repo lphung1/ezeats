@@ -19,15 +19,15 @@
 @description   --Since CSS pages can get chaotic, I usually keep everything alphabetical.   -Jake M
 **/
 
-a { /*Turns off link underlines.*/
+a { /*Turns off link underlines. ALL PAGES*/
     text-decoration: none;
 }
 
-body { /*Test for body background color.*/
+body { /*Test for body background color. ALL PAGES*/
     background-color: white !important;
 }
 
-footer { /*Centers footer text.*/
+footer { /*Centers footer text. ALL PAGES*/
     text-align: center;
 }
 
@@ -45,7 +45,7 @@ footer a:hover{ /*Italicizes 'Contact Us' in footer when hovered over by mouse.*
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 116px;
     text-decoration: none;
     font-size: 20px;
 }
@@ -58,4 +58,10 @@ footer a:hover{ /*Italicizes 'Contact Us' in footer when hovered over by mouse.*
 .nav li:hover { /*Color of menu item when hovered over by mouse.*/
     background-color: #ddd;
     color: black;
+}
+
+title { /*Font size and type for app title. ALL PAGES */
+    text-align: center;
+    font-size: larger;
+    font-family: sans-serif;
 }
