@@ -13,8 +13,34 @@
  *= require_tree .
  *= require_self
  */
+
+input[type=text] {
+    width: 170px;
+    background-color: black;
+    color: white;
+    -webkit-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 80% */
+input[type=text]:focus {
+    width: 80%;
+}
+
+.foodButton{
+    background:url(./images/but.png) no-repeat;
+    cursor:pointer;
+    border:none;
+    width:100px;
+    height:100px;
+}
+
+.foodButton:active 
+{   
+    background:url(./images/but2.png) no-repeat;
+}
+
  /**
-@title home.css
 @author The Stake Drivers
 @description   --Since CSS pages can get chaotic, I usually keep everything alphabetical.   -Jake M
 **/
@@ -60,8 +86,11 @@ footer a:hover{ /*Italicizes 'Contact Us' in footer when hovered over by mouse.*
     color: black;
 }
 
+<<<<<<< HEAD
 title { /*Font size and type for app title. ALL PAGES */
     text-align: center;
     font-size: larger;
     font-family: sans-serif;
 }
+=======
+>>>>>>> 14cb21c15f089fdb4b925dd8e10115ff5d5dfab1
