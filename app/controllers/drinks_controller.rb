@@ -16,7 +16,7 @@ class DrinksController < ApplicationController
 
 
     private
-    def article_param
+    def drink_param
         params.require(:drink).permit(:name, :d_ingredients)
     end
 
