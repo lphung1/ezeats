@@ -14,6 +14,11 @@ class DrinksController < ApplicationController
       @drink = Drink.find(params[:id])
     end
 
+    def create
+      @drink = Drink.new(drink_params)
+      @drink.save
+      redirect_to @drink
+    end
 
     private
     def drink_param

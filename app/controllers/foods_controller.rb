@@ -14,6 +14,12 @@ class FoodsController < ApplicationController
       @recipe = Recipe.find(params[:id])
     end
 
+    def create
+      @recipe = Recipe.new(drink_params)
+      @recipe.save
+      redirect_to @recipe
+    end
+
     private
     def recipe_param
         params.require(:recipe).permit(:name, :ingredients)
