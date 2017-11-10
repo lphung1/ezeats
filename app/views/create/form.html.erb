@@ -1,13 +1,13 @@
-<%= form_for @recipes do |f| %>
+<%= form_for @recipe do |f| %>
  
-  <% if @recipes.errors.any? %>
+  <% if @recipe.errors.any? %>
     <div id="error_explanation">
       <h2>
-        <%= pluralize(@recipes.errors.count, "error") %> prohibited
+        <%= pluralize(@recipe.errors.count, "error") %> prohibited
         this recipes from being saved:
       </h2>
       <ul>
-        <% @recipes.errors.full_messages.each do |msg| %>
+        <% @recipe.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
         <% end %>
       </ul>
