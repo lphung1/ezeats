@@ -14,20 +14,30 @@
  *= require_self
  */
 
-input[type=text] {
-    width: 170px;
-    background-color: black;
+/**
+@author The Stake Drivers
+@description   --Since CSS pages can get chaotic, I usually keep everything alphabetical.   -Jake M
+**/
+
+a { /*Turns off link underlines. ALL PAGES*/
+    text-decoration: none;
     color: white;
-    -webkit-transition: width 1s ease-in-out;
-    transition: width 1s ease-in-out;
+    font-family: sans-serif;
 }
 
-/* When the input field gets focus, change its width to 80% */
-input[type=text]:focus {
-    width: 80%;
+body { /*Test for body background color. ALL PAGES*/
+    background-image: url("https://static.pexels.com/photos/5938/food-salad-healthy-lunch.jpg");
+    background-color: #cccccc;
+    width: 100%;
+    height:100%;
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin:auto;
+    padding:0;
 }
 
-.foodButton{
+.foodButton {
     background:url(./images/but.png) no-repeat;
     cursor:pointer;
     border:none;
@@ -35,22 +45,8 @@ input[type=text]:focus {
     height:100px;
 }
 
-.foodButton:active 
-{   
+.foodButton:active {
     background:url(./images/but2.png) no-repeat;
-}
-
- /**
-@author The Stake Drivers
-@description   --Since CSS pages can get chaotic, I usually keep everything alphabetical.   -Jake M
-**/
-
-a { /*Turns off link underlines. ALL PAGES*/
-    text-decoration: none;
-}
-
-body { /*Test for body background color. ALL PAGES*/
-    background-color: white !important;
 }
 
 footer { /*Centers footer text. ALL PAGES*/
@@ -61,17 +57,31 @@ footer a:hover{ /*Italicizes 'Contact Us' in footer when hovered over by mouse.*
     font-style: italic;
 }
 
+input[type=text] { /*Default text box style.*/
+    width: 170px;
+    background-color: black;
+    color: white;
+    -webkit-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+
+input[type=text]:focus { /*When the input field gets focus, change its width to 80%.*/
+    width: 80%;
+}
+
 .nav { /*Test color overlay.*/
     overflow: hidden;
-    background-color: #333;
+    background-color: #6BBAA7;
+    width: 100%;
 }
 
 .nav li { /*Text formatting for list elements in nav bar.*/
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: white;
     text-align: center;
-    padding: 14px 116px;
+    padding: 10px;
+    padding-right: 30px;
     text-decoration: none;
     font-size: 20px;
 }
@@ -86,8 +96,12 @@ footer a:hover{ /*Italicizes 'Contact Us' in footer when hovered over by mouse.*
     color: black;
 }
 
-title { /*Font size and type for app title. ALL PAGES */
+.site-title { /*Font size and type for app title. ALL PAGES */
     text-align: center;
-    font-size: larger;
-    font-family: sans-serif;
+    font-family: 'Just Another Hand', cursive;
+    font-style: normal;
+    font-size: 100px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: -20px;
 }
