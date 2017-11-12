@@ -1,0 +1,23 @@
+<p>
+    <strong>Food Name:</strong>
+    <%= @recipe.name %>
+</p>
+<p>
+    <strong>Ingredients:</strong>
+    <%= @recipe.ingredient %>
+</p>
+<h2>Add a food item:</h2>
+<%= form_for([@recipe, @recipe.comments.build]) do |f| %>
+    <p>
+        <%= f.label :name %><br>
+        <%= f.text_field :name %>
+    </p>
+    <p>
+        <%= f.label :ingredient %><br>
+        <%= f.text_area :ingredient %>
+    </p>
+    <p>
+        <%= f.submit %>
+    </p>
+    <% end %>
+<%= link_to 'Home ' , controller: 'home' %>

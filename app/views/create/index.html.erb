@@ -1,19 +1,34 @@
 <!DOCTYPE html> <!-- BEGINNING OF PROGRAM -->
 <head>
 	<title>EZ Eats - Home</title> <!-- Title of page -->
-	<link rel="stylesheet" href="../../assets/stylesheets/home.scss" /> <!-- Import style sheet -->
+	<link rel="stylesheet" href="../../assets/stylesheets/application.css" /> <!-- Import style sheet -->
+	<link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 </head>
 
-<body>
-    <h1>EZ Eats</h1> <!-- Main content of page -->
-    <ul class = "nav"> <!-- CLASS for horizontal nav bar on top of page -->
-        <li><%= link_to 'Foods' , controller: 'foods' %></li>
-        <li><%= link_to 'Drinks ' , controller: 'drinks' %></li>
-        <li><%= link_to 'Home ' , controller: 'home' %></li>
-        <li><%= link_to 'Search ' , controller: 'search' %></li>
-        <li><%= link_to 'Create' , controller: 'create' %></li>
-    </ul>
-    <h2>Create<h2>
+<body class="create-body">
+    <header>
+        <h1 class = "site-title">EZ EATS</h1> <!-- Main content of page -->
+        <ul class = "nav"> <!-- CLASS for horizontal nav bar on top of page -->
+            <li><%= link_to 'Home ' , controller: 'home' %></li>
+            <li><%= link_to 'Foods' , controller: 'foods' %></li>
+            <li><%= link_to 'Drinks ' , controller: 'drinks' %></li>
+            <li><%= link_to 'Create' , controller: 'create' %></li>
+            <li><%= link_to 'Search ' , controller: 'search' %></li>
+        </ul>
+    </header>
+    <main>
+        <h2>Create<h2>
+        
+        <form id= "f">
+            Food Name:<br>
+            <input type="text" name="Name"><br>
+            Ingredients:<br>
+            <input type="text" name="Ingredients"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
     <footer> <!-- Footer containing copyright symbol and 'Contact Us' link. -->
-    <p>&copy; The Stake Drivers -- <%= link_to 'Contact Us' , controller: 'contact' %></p>
-</footer>
+        <p>&copy; The Stake Drivers - <%= link_to 'Contact Us' , controller: 'contact' %></p>
+    </footer>
+</body>
