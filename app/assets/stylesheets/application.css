@@ -26,13 +26,37 @@ a { /*Turns off link underlines. ALL PAGES*/
     font-family: 'Just Another Hand', cursive;
 }
 
-body { /*Test for body background color. ALL PAGES (SOMETHING WRONG HERE!!)*/
-    background-image: url("https://static.pexels.com/photos/5938/food-salad-healthy-lunch.jpg");
+.contact-body { /*Body background. CONTACT PAGE*/
+    background-image: url("https://static.pexels.com/photos/257794/pexels-photo-257794.jpeg");
     background-color: #000000;
     width: 100%;
     min-height:100%;
     background-size: cover; 
-    background-position: center;
+    position: fixed;
+    background-repeat: no-repeat;
+    margin: auto;
+    padding:0;
+}
+
+.create-body { /*Body background. CREATE PAGE*/
+    background-image: url("https://static.pexels.com/photos/268328/pexels-photo-268328.jpeg");
+    background-color: #000000;
+    width: 100%;
+    min-height:100%;
+    background-size: cover; 
+    position: fixed;
+    background-repeat: no-repeat;
+    margin: auto;
+    padding:0;
+}
+
+.drinks-body { /*Body background. DRINKS PAGE*/
+    background-image: url("https://static.pexels.com/photos/6290/alcohol-party-glass-table.jpg");
+    background-color: #000000;
+    width: 100%;
+    min-height:100%;
+    background-size: cover; 
+    position: fixed;
     background-repeat: no-repeat;
     margin: auto;
     padding:0;
@@ -48,6 +72,18 @@ body { /*Test for body background color. ALL PAGES (SOMETHING WRONG HERE!!)*/
 
 .foodButton:active {
     background:url(./images/but2.png) no-repeat;
+}
+
+.foods-body { /*Body background. FOODS PAGE*/
+    background-image: url("https://static.pexels.com/photos/568370/pexels-photo-568370.jpeg");
+    background-color: #000000;
+    width: 100%;
+    min-height:100%;
+    background-size: cover; 
+    position: fixed;
+    background-repeat: no-repeat;
+    margin: auto;
+    padding:0;
 }
 
 footer { /*Centers footer text and defaults font and size. ALL PAGES*/
@@ -68,6 +104,18 @@ footer a:hover{ /*Italicizes 'Contact Us' in footer when hovered over by mouse.*
 header { /*Heading background color and 5% transparency.*/
     background-color: #FBA100;
     opacity: 0.95;
+}
+
+.home-body { /*Body background. HOME PAGE*/
+    background-image: url("https://static.pexels.com/photos/326279/pexels-photo-326279.jpeg");
+    background-color: #000000;
+    width: 100%;
+    min-height:100%;
+    background-size: cover; 
+    position: fixed;
+    background-repeat: no-repeat;
+    margin: auto;
+    padding:0;
 }
 
 input[type=text] { /*Default text box style.*/
@@ -113,6 +161,18 @@ main {
     color: black;
     content: '»';
     transition: 0.25s;
+}
+
+.search-body { /*Body background. SEARCH PAGE*/
+    background-image: url("https://static.pexels.com/photos/8717/food-pot-kitchen-cooking.jpg");
+    background-color: #000000;
+    width: 100%;
+    min-height:100%;
+    background-size: cover; 
+    position: fixed;
+    background-repeat: no-repeat;
+    margin: auto;
+    padding:0;
 }
 
 .site-title { /*Font size and type for app title. ALL PAGES */
