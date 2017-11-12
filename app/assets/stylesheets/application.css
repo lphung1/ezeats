@@ -38,6 +38,14 @@ a { /*Turns off link underlines. ALL PAGES*/
     padding:0;
 }
 
+#contact {
+    padding-top: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 .create-body { /*Body background. CREATE PAGE*/
     background-image: url("https://static.pexels.com/photos/268328/pexels-photo-268328.jpeg");
     background-color: #000000;
@@ -134,7 +142,10 @@ main {
     background-color: white;
     opacity: 0.95;
     height: 100%;
-    width: 100%;
+    width: 70%;
+    margin: auto;
+    box-shadow: 2px 2px 5px black;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .nav { /*Test color overlay.*/
