@@ -38,12 +38,12 @@ a { /*Turns off link underlines. ALL PAGES*/
     padding:0;
 }
 
-#contact {
-    padding-top: 20px;
+#contact { /*Contact info ID for main in CONTACT PAGE.*/
+    padding-top: 0px;
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Just Another Hand', cursive;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 60px;
 }
 
 .create-body { /*Body background. CREATE PAGE*/
@@ -99,14 +99,15 @@ footer { /*Centers footer text and defaults font and size. ALL PAGES*/
     font-family: 'Just Another Hand', cursive;
     background-color: #FBA100;
     opacity: 0.95;
-    font-size: 35px;
+    font-size: 30px;
     color: white;
     font-weight: normal;
     text-shadow: 2px 2px #000000;
+    font-style: italic;
 }
 
 footer a:hover{ /*Italicizes 'Contact Us' in footer when hovered over by mouse.*/
-    font-style: italic;
+    font-style: normal;
 }
 
 header { /*Heading background color and 5% transparency.*/
@@ -138,11 +139,13 @@ input[type=text]:focus { /*When the input field gets focus, change its width to 
     width: 80%;
 }
 
-main {
-    background-color: white;
+main { /*Attributes regarding main content space of page. EVERY PAGE*/
+    background-color: #ffff99;
+    border-style: groove;
+    border: 5px solid brown;
     opacity: 0.95;
     height: 100%;
-    width: 70%;
+    width: 90%;
     margin: auto;
     box-shadow: 2px 2px 5px black;
     font-family: 'Fira Sans', sans-serif;
