@@ -1,13 +1,13 @@
 <p>
     <strong>Food Name:</strong>
-    <%= @recipe.name %>
+    <%= @foods %>
 </p>
 <p>
     <strong>Ingredients:</strong>
-    <%= @recipe.ingredient %>
+    <%= @foods %>
 </p>
 <h2>Add a food item:</h2>
-<%= form_for([@recipe, @recipe.comments.build]) do |f| %>
+<%= form_for(:foods) do |f| %>
     <p>
         <%= f.label :name %><br>
         <%= f.text_field :name %>
