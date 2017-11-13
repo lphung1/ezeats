@@ -159,15 +159,16 @@ main { /*Attributes regarding main content space of page. EVERY PAGE*/
 }
 
 .nav li { /*Text formatting for list elements in nav bar.*/
-    float: left;
-    display: block;
+    float: none;
+    display: inline-block;
     color: white;
     text-align: center;
-    padding: 10px;
-    padding-right: 50px;
-    padding-left: 50px;
+    /*padding-right: 100px;
+    padding-left: 100px;*/
     text-decoration: none;
     font-size: 40px;
+    margin: 0 auto;
+    width: 23.5%;
 }
 
 .nav li:hover { /*Color of menu item when hovered over by mouse.*/

@@ -1,6 +1,12 @@
+<!--
+@title index.html.erb
+@author The Stake Drivers
+@description   --Foods HTML page.
+-->
+
 <!DOCTYPE html> <!-- BEGINNING OF PROGRAM -->
 <head>
-	<title>EZ Eats - Home</title> <!-- Title of page -->
+	<title>EZ Eats - Foods</title> <!-- Title of page -->
 	<link rel="stylesheet" href="../../assets/stylesheets/application.css" /> <!-- Import style sheet -->
 	<link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
@@ -10,11 +16,10 @@
     <header>
         <h1 class = "site-title">EZ EATS</h1> <!-- Main content of page -->
         <ul class = "nav"> <!-- CLASS for horizontal nav bar on top of page -->
-            <li><%= link_to 'Home ' , controller: 'home' %></li>
-            <li><%= link_to 'Foods' , controller: 'food' %></li>
-            <li><%= link_to 'Drinks ' , controller: 'drinks' %></li>
-            <li><%= link_to 'Create' , controller: 'create' %></li>
-            <li><%= link_to 'Search ' , controller: 'search' %></li>
+            <li><%= link_to 'HOME' , controller: 'home' %></li>
+            <li><%= link_to 'FOOD' , controller: 'food' %></li>
+            <li><%= link_to 'DRINKS' , controller: 'drinks' %></li>
+            <li><%= link_to 'CREATE' , controller: 'create' %></li>
         </ul>
     </header>
     <main>
