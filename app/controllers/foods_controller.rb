@@ -1,7 +1,6 @@
 class FoodsController < ApplicationController
 
-    def food
-        @food = self
+    def foods
     end
 
     def index
