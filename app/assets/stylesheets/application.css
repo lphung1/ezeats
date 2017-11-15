@@ -56,11 +56,10 @@ a {
     width: 100%;
     min-height:100%;
     background-size: cover; 
-    position: fixed;
     background-repeat: no-repeat;
     margin: auto;
     padding:0;
-    overflow-y: auto;
+    overflow: scroll;
 }
 
 /*Body background. DRINKS PAGE*/
@@ -70,10 +69,11 @@ a {
     width: 100%;
     min-height:100%;
     background-size: cover; 
-    position: fixed;
     background-repeat: no-repeat;
     margin: auto;
+    position: fixed;
     padding:0;
+    overflow: scroll;
 }
 
 .foodButton {
@@ -95,10 +95,10 @@ a {
     width: 100%;
     min-height:100%;
     background-size: cover; 
-    position: fixed;
     background-repeat: no-repeat;
     margin: auto;
     padding:0;
+    overflow: scroll;
 }
 
 /*Centers footer text and defaults font and size. ALL PAGES*/
@@ -153,10 +153,10 @@ header {
     width: 100%;
     min-height:100%;
     background-size: cover; 
-    position: fixed;
     background-repeat: no-repeat;
     margin: auto;
     padding:0;
+    overflow: scroll;
 }
 
  /*Default text box style.*/
@@ -219,19 +219,6 @@ main h2 {
 .nav li:hover { 
     background-color: #a8d6cb;
     transition: 0.25s;
-}
-
-/*Body background image and settings. SEARCH PAGE*/
-.search-body { 
-    background-image: url("https://static.pexels.com/photos/8717/food-pot-kitchen-cooking.jpg");
-    background-color: #000000;
-    width: 100%;
-    min-height:100%;
-    background-size: cover; 
-    position: fixed;
-    background-repeat: no-repeat;
-    margin: auto;
-    padding:0;
 }
 
 /*Font size and type for app title. ALL PAGES */
