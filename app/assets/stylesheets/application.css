@@ -122,6 +122,7 @@ input[type=text] { /*Default text box style.*/
     width: 170px;
     background-color: black;
     color: white;
+    font-family: "Verdana",Geneva, sans-serif;
     -webkit-transition: width 1s ease-in-out;
     transition: width 1s ease-in-out;
 }
