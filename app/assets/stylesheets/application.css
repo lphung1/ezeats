@@ -154,11 +154,14 @@ header {
  /*Default text box style.*/
 input[type=text] {
     width: 170px;
-    background-color: black;
+    background-color: #6BBAA7;
     color: white;
     font-family: Verdana,Geneva, sans-serif;
     -webkit-transition: width 1s ease-in-out;
     transition: width 1s ease-in-out;
+    border-color: #FBA100;
+    border-radius: 4px;
+    
 }
 
 /*When the input field gets focus, change its width to 80%.*/
