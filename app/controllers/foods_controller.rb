@@ -1,5 +1,5 @@
-class FoodController < ApplicationController
-       
+class FoodsController < ApplicationController
+
     def food
         @food = self
     end
@@ -26,6 +26,5 @@ class FoodController < ApplicationController
     def food_params
         params.require(:food).permit(:name, :ingredients)
     end
-    
-    
+
 end
