@@ -1,44 +1,47 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
-
 /**
 @author The Stake Drivers
 @description   --Since CSS pages can get chaotic, I usually keep everything alphabetical.   -Jake M
 **/
 
-a { /*Turns off link underlines. ALL PAGES*/
+/*Turns off link underlines. ALL PAGES*/
+a { 
     text-decoration: none;
     color: white;
     font-family: sans-serif;
     font-family: 'Just Another Hand', cursive;
 }
 
-.contact-body { /*Body background. CONTACT PAGE*/
+/*Colored boxing that appears in main around headings*/
+.boxed {
+    border: 3px;
+    background-color: #6BBAA7;
+}
+
+/*h2 element stylings within boxed CLASS div.*/
+.boxed h2 {
+    text-align: center;
+    font-family: 'Just Another Hand', cursive;
+    font-size: 50px;
+    margin-left: 50px;
+    color: white;
+    text-shadow: 2px 2px #000000;
+}
+
+/*Body background. CONTACT PAGE*/
+.contact-body { 
     background-image: url("https://static.pexels.com/photos/257794/pexels-photo-257794.jpeg");
     background-color: #000000;
     width: 100%;
     min-height:100%;
     background-size: cover; 
-    position: fixed;
     background-repeat: no-repeat;
     margin: auto;
     padding:0;
+    overflow: scroll;
 }
 
-#contact { /*Contact info ID for main in CONTACT PAGE.*/
+/*Contact info ID for main in CONTACT PAGE.*/
+#contact { 
     padding-top: 0px;
     text-align: center;
     font-family: 'Just Another Hand', cursive;
@@ -48,44 +51,50 @@ a { /*Turns off link underlines. ALL PAGES*/
 
 
 .create-body { /*Body background. CREATE PAGE*/
+/*Body background. CREATE PAGE*/
+
     background-image: url("https://static.pexels.com/photos/268328/pexels-photo-268328.jpeg");
     background-color: #000000;
     width: 100%;
     min-height:100%;
     background-size: cover; 
-    position: fixed;
     background-repeat: no-repeat;
     margin: auto;
     padding:0;
+    overflow: scroll;
 }
 
-.drinks-body { /*Body background. DRINKS PAGE*/
+/*Body background. DRINKS PAGE*/
+.drinks-body { 
     background-image: url("https://static.pexels.com/photos/6290/alcohol-party-glass-table.jpg");
     background-color: #000000;
     width: 100%;
     min-height:100%;
     background-size: cover; 
-    position: fixed;
     background-repeat: no-repeat;
     margin: auto;
+    position: fixed;
     padding:0;
+    overflow: scroll;
 }
 
 
 
-.foods-body { /*Body background. FOODS PAGE*/
+/*Body background image and settings. FOODS PAGE*/
+.foods-body {
     background-image: url("https://static.pexels.com/photos/568370/pexels-photo-568370.jpeg");
     background-color: #000000;
     width: 100%;
     min-height:100%;
     background-size: cover; 
-    position: fixed;
     background-repeat: no-repeat;
     margin: auto;
     padding:0;
+    overflow: scroll;
 }
 
-footer { /*Centers footer text and defaults font and size. ALL PAGES*/
+/*Centers footer text and defaults font and size. ALL PAGES*/
+footer { 
     text-align: center;
     font-family: 'Just Another Hand', cursive;
     background-color: #FBA100;
@@ -97,91 +106,114 @@ footer { /*Centers footer text and defaults font and size. ALL PAGES*/
     font-style: italic;
 }
 
-footer a:hover{ /*Italicizes 'Contact Us' in footer when hovered over by mouse.*/
+/*Normalizes 'Contact Us' in footer when hovered over by mouse.*/
+footer a:hover{ 
     font-style: normal;
 }
 
-header { /*Heading background color and 5% transparency.*/
-    background-color: #FBA100;
+/*Form specifications for CREATE PAGE*/
+.formcreate {
+    margin-left: 50px;
+}
+
+/*Left half form specifications. FOODS, DRINKS PAGES*/
+.formleft {
+    width: 40%;
+    border:1px solid blue;
+    margin-left: 50px;
+    display: inline-block;
+}
+
+/*Right half form specifications. FOODS, DRINKS PAGES*/
+.formright {
+    width: 40%;
+    border:1px solid red;
+    display: inline-block;
+    margin-left: 100px;
+}
+
+/*Heading background color and 5% transparency.*/
+header { 
+    background-color: #FBA100; /*Orange*/
     opacity: 0.95;
 }
 
-.home-body { /*Body background. HOME PAGE*/
+/*Body background image and settings. HOME PAGE*/
+.home-body {
     background-image: url("https://static.pexels.com/photos/326279/pexels-photo-326279.jpeg");
     background-color: #000000;
     width: 100%;
     min-height:100%;
     background-size: cover; 
-    position: fixed;
     background-repeat: no-repeat;
     margin: auto;
     padding:0;
+    overflow: scroll;
 }
 
-input[type=text] { /*Default text box style.*/
+ /*Default text box style.*/
+input[type=text] {
     width: 170px;
     background-color: black;
     color: white;
-    font-family: "Verdana",Geneva, sans-serif;
+    font-family: Verdana,Geneva, sans-serif;
     -webkit-transition: width 1s ease-in-out;
     transition: width 1s ease-in-out;
 }
 
-input[type=text]:focus { /*When the input field gets focus, change its width to 80%.*/
+/*When the input field gets focus, change its width to 80%.*/
+input[type=text]:focus { 
     width: 80%;
 }
 
-main { /*Attributes regarding main content space of page. EVERY PAGE*/
-    background-color: #ffff99;
+/*Attributes regarding main content space of page. EVERY PAGE*/
+main { 
+    background-color: #F2F2F2;
     border-style: groove;
-    border: 5px solid brown;
-    opacity: 0.95;
+    border: 5px solid #6BBAA7; /*Blue*/
+    opacity: 0.98;
+    transition: 1s opacity;
     height: 100%;
-    width: 90%;
+    width: 93%;
     margin: auto;
     box-shadow: 2px 2px 5px black;
     font-family: 'Fira Sans', sans-serif;
 }
 
-.nav { /*Test color overlay.*/
+/*Text and color alteration for nav bar.*/
+.nav { 
     overflow: hidden;
-    background-color: #6BBAA7;
+    background-color: #6BBAA7; /*Blue*/
     width: 100%;
     text-shadow: 2px 2px #000000;
 }
 
-.nav li { /*Text formatting for list elements in nav bar.*/
-    float: left;
-    display: block;
+/*Text formatting for list elements in nav bar.*/
+.nav li { 
+    float: none;
+    display: inline-block;
     color: white;
     text-align: center;
-    padding: 10px;
-    padding-right: 50px;
-    padding-left: 50px;
     text-decoration: none;
     font-size: 40px;
+    margin: 0 auto;
+    width: 23.5%;
 }
 
-.nav li:hover { /*Color of menu item when hovered over by mouse.*/
+/*Color of menu item when hovered over by mouse. NEEDS TO BE FIXED*/
+.nav li:hover { 
     background-color: #a8d6cb;
-    color: black;
-    content: '»';
     transition: 0.25s;
+    border-bottom: 3px solid white;
 }
 
-.search-body { /*Body background. SEARCH PAGE*/
-    background-image: url("https://static.pexels.com/photos/8717/food-pot-kitchen-cooking.jpg");
-    background-color: #000000;
-    width: 100%;
-    min-height:100%;
-    background-size: cover; 
-    position: fixed;
-    background-repeat: no-repeat;
-    margin: auto;
-    padding:0;
+/*Shrinks nav item when clicked on for visual aid.*/
+.nav li:active {
+    transform: scale(.95); 
 }
 
-.site-title { /*Font size and type for app title. ALL PAGES */
+/*Font size and type for app title. ALL PAGES */
+.site-title { 
     text-align: center;
     font-family: 'Just Another Hand', cursive;
     font-style: normal;
@@ -190,4 +222,31 @@ main { /*Attributes regarding main content space of page. EVERY PAGE*/
     margin-top: 10px;
     margin-bottom: -32px;
     text-shadow: 2px 2px #000000;
+}
+
+/*Submit button attributes. ALL PAGES*/
+.submit {
+    background-color: #FBA100; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin: 20px 50% 20px 44.5%;
+    font-family: 'Just Another Hand', cursive;
+    text-shadow: 2px 2px #000000;
+    box-shadow: 2px 2px 10px #000000;
+    border-radius: 4px;
+}
+
+/*Alters submit button appearence when hovered over by mouse.*/
+.submit:hover {
+    font-weight: bold; 
+}
+
+/*Shrinks button on click for visual aid.*/
+.submit:active {
+    transform: scale(.98); 
 }
