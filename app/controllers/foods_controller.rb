@@ -16,9 +16,9 @@ class FoodsController < ApplicationController
     end
 
     def create
-      @food = Food.new(food_params)
-      @food.save
-      redirect_to @food
+      @foods = Food.new(food_params)
+      @foods.save
+      redirect_to @foods
     end
 
     private
