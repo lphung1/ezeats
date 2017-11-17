@@ -1,11 +1,10 @@
 class FoodsController < ApplicationController
 
-    def food
-        @food = self
+    def foods
     end
 
     def index
-      @food = Food.all
+      @foods = Food.all
     end
 
     def new

@@ -24,7 +24,12 @@
     </header>
     <main>
         <div class="boxed"><h2>&diams; FEATURED ITEMS &diams;</h2></div><!-- Content will go here -->
+				<% @foods.each do |f| %>
+					<%= f.name %>
+					<%= f.ingredients %>
+				<% end %>
     </main>
+
     <footer> <!-- Footer containing copyright symbol and 'Contact Us' link. -->
         <p>&copy; The Stake Drivers - <%= link_to 'Contact Us' , controller: 'contact' %> - EZ Eats &trade;</p>
     </footer>
