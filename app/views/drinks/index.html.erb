@@ -24,6 +24,18 @@
     </header>
     <main>
         <div class="boxed"><h2>&diams; FIND DRINK RECIPES &diams;<h2></div>
+        <form class= "formdrink"> <!-- CLASS for drink form -->
+            <div class= "formleft"> <!-- CLASS for left half of form -->
+                <p>Enter drink ingredients here:</p>
+                <textarea name="ingredients" rows="3" cols="50">Search for your possible recipes by entering ingredients, separated by commas. (Example: whiskey, cola, rum)</textarea><br>
+            </div>
+            <div class= "formright"> <!-- CLASS for right half of form -->
+                <input type="checkbox" name="drinktype" value="Shots">Shots<br>
+                <input type="checkbox" name="drinktype" value="Shots">Cocktails<br>
+                <input type="checkbox" name="drinktype" value="Shots">Liqueurs<br>
+            </div>
+            <button class="submit" type="submit">SEARCH</button>
+        </form>
     </main>
     <footer> <!-- Footer containing copyright symbol and 'Contact Us' link. -->
         <p>&copy; The Stake Drivers - <%= link_to 'Contact Us' , controller: 'contact' %> - EZ Eats &trade;</p>
