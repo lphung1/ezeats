@@ -49,8 +49,10 @@ a {
     font-size: 60px;
 }
 
+
+.create-body { /*Body background. CREATE PAGE*/
 /*Body background. CREATE PAGE*/
-.create-body { 
+
     background-image: url("https://static.pexels.com/photos/268328/pexels-photo-268328.jpeg");
     background-color: #000000;
     width: 100%;
@@ -76,17 +78,7 @@ a {
     overflow: scroll;
 }
 
-.foodButton {
-    background:url(./images/but.png) no-repeat;
-    cursor:pointer;
-    border:none;
-    width:100px;
-    height:100px;
-}
 
-.foodButton:active {
-    background:url(./images/but2.png) no-repeat;
-}
 
 /*Body background image and settings. FOODS PAGE*/
 .foods-body {
@@ -162,10 +154,14 @@ header {
  /*Default text box style.*/
 input[type=text] {
     width: 170px;
-    background-color: black;
+    background-color: #6BBAA7;
     color: white;
+    font-family: Verdana,Geneva, sans-serif;
     -webkit-transition: width 1s ease-in-out;
     transition: width 1s ease-in-out;
+    border-color: #FBA100;
+    border-radius: 4px;
+    
 }
 
 /*When the input field gets focus, change its width to 80%.*/
@@ -205,13 +201,13 @@ main {
     font-size: 40px;
     margin: 0 auto;
     width: 23.5%;
+    border-bottom: 3px solid white;
 }
 
 /*Color of menu item when hovered over by mouse. NEEDS TO BE FIXED*/
 .nav li:hover { 
     background-color: #a8d6cb;
     transition: 0.25s;
-    border-bottom: 3px solid white;
 }
 
 /*Shrinks nav item when clicked on for visual aid.*/

@@ -17,14 +17,14 @@
         <h1 class = "site-title">EZ EATS</h1> <!-- Main content of page -->
         <ul class = "nav"> <!-- CLASS for horizontal nav bar on top of page -->
             <li><%= link_to 'HOME' , controller: 'home' %></li>
-            <li><%= link_to 'FOOD' , controller: 'food' %></li>
+            <li><%= link_to 'FOOD' , controller: 'foods' %></li>
             <li><%= link_to 'DRINKS' , controller: 'drinks' %></li>
             <li><%= link_to 'CREATE' , controller: 'create' %></li>
         </ul>
     </header>
     <main>
         <div class="boxed"><h2>&diams; CREATE A RECIPE &diams;<h2></div>
-        
+
         <form class= "formcreate">
             <p>Food Name:</p><br>
             <input type="text" name="Name"><br>
