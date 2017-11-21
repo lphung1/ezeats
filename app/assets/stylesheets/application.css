@@ -35,6 +35,7 @@ a {
     min-height:100%;
     background-size: cover; 
     background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: auto;
     padding:0;
     overflow: scroll;
@@ -49,16 +50,15 @@ a {
     font-size: 60px;
 }
 
-
-.create-body { /*Body background. CREATE PAGE*/
 /*Body background. CREATE PAGE*/
-
+.create-body { 
     background-image: url("https://static.pexels.com/photos/268328/pexels-photo-268328.jpeg");
     background-color: #000000;
     width: 100%;
     min-height:100%;
     background-size: cover; 
     background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: auto;
     padding:0;
     overflow: scroll;
@@ -72,13 +72,12 @@ a {
     min-height:100%;
     background-size: cover; 
     background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: auto;
     position: fixed;
     padding:0;
     overflow: scroll;
 }
-
-
 
 /*Body background image and settings. FOODS PAGE*/
 .foods-body {
@@ -88,6 +87,7 @@ a {
     min-height:100%;
     background-size: cover; 
     background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: auto;
     padding:0;
     overflow: scroll;
@@ -146,6 +146,7 @@ header {
     min-height:100%;
     background-size: cover; 
     background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: auto;
     padding:0;
     overflow: scroll;
@@ -154,12 +155,12 @@ header {
  /*Default text box style.*/
 input[type=text] {
     width: 170px;
-    background-color: #6BBAA7;
-    color: white;
+    background-color: white;
+    color: black;
     font-family: Verdana,Geneva, sans-serif;
     -webkit-transition: width 1s ease-in-out;
     transition: width 1s ease-in-out;
-    border-color: #FBA100;
+    border-color: black;
     border-radius: 4px;
     
 }
@@ -201,7 +202,6 @@ main {
     font-size: 40px;
     margin: 0 auto;
     width: 23.5%;
-    border-bottom: 3px solid white;
 }
 
 /*Color of menu item when hovered over by mouse. NEEDS TO BE FIXED*/
@@ -252,4 +252,19 @@ main {
 /*Shrinks button on click for visual aid.*/
 .submit:active {
     transform: scale(.98); 
+}
+
+table {
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+table, th {
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 15px;
 }
