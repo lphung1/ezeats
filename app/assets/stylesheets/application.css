@@ -254,15 +254,18 @@ main {
     transform: scale(.98); 
 }
 
+/*Basic table attributes*/
 table {
     margin: auto;
     margin-bottom: 40px;
 }
 
+/*Table header attributes*/
 table, th {
     text-align: center;
 }
 
+/*Table data attributes*/
 table, th, td {
     border: 1px solid grey;
     border-collapse: collapse;
