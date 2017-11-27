@@ -24,19 +24,23 @@
     </header>
     <main>
         <div class="boxed"><h2>&diams; FEATURED ITEMS &diams;</h2></div><!-- Content will go here -->
-				<table style="width:80%">
-                    <tr>
+				<table style="width:80%"><!-- Table for food results and stats. -->
+                    <tr><!-- BEGIN table heading -->
+                        <th>Photo</th>
                         <th>Foods</th>
                         <th>Ingredients</th> 
                         <th>Reviews? (1 - 5 Stars)</th>
                         <th>Instructions?</th>
-                    </tr>
-                    <tr>
+                    </tr><!-- END table heading -->
+                    <tr><!-- BEGIN table 1st row -->
+                        <td><img src="https://www.goodfreephotos.com/albums/vector-images/piece-of-cheese.png" alt="Cheese" height="60px" width="50px"></td>
                         <td><% @foods.each do |f| %>
 					        <%= f.name %><% end %></td>
                         <td><% @foods.each do |f| %>
 					        <%= f.ingredients %><% end %></td>
-					</tr>
+					    <td>Insert Review Here!</td>
+					    <td>Insert Instructions Here!</td>
+					</tr><!-- END table 1st row -->
                 </table>
     </main>
 
