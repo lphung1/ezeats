@@ -1,0 +1,15 @@
+<%= form_for :food do |f| %>
+<p>
+  <%= f.label :name %><br>
+  <%= f.text_field :name %>
+</p>
+
+<p>
+  <%= f.label :ingredients %><br>
+  <%= f.text_area :ingredients %>
+</p>
+
+<p>
+  <%= f.submit %>
+</p>
+<% end %>

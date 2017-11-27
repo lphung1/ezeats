@@ -1,4 +1,5 @@
 class DrinksController < ApplicationController
+  #not updated but similar function to foods
     def drinks
     end
 
