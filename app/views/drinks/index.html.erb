@@ -19,7 +19,7 @@
             <li><%= link_to 'HOME' , controller: 'home' %></li>
             <li><%= link_to 'FOOD' , controller: 'foods' %></li>
             <li><%= link_to 'DRINKS' , controller: 'drinks' %></li>
-            <li><%= link_to 'CREATE' , controller: 'create' %></li>
+            <li><%= link_to 'CREATE' , new_food_path %></li>
         </ul>
     </header>
     <main>
@@ -28,10 +28,10 @@
             <div class= "formleft"> <!-- CLASS for left half of form -->
                 <p>Enter drink ingredients here:</p>
 <<<<<<< HEAD
-                <textarea name="ingredients" rows="3" cols="50">Search for your possible recipes by entering ingredients, separated by commas. (Example: whiskey, cola, rum)</textarea><br>
-=======
                 <textarea name="ingredients" rows="3" cols="50" placeholder = "Search for your possible recipes by entering ingredients, separated by commas. (Example: whiskey, cola, rum)" ></textarea></textarea><br>
->>>>>>> a076dff6cc96cc23345e81e78b700e6af5ea6296
+=======
+                <textarea name="ingredients" rows="3" cols="50">Search for your possible recipes by entering ingredients, separated by commas. (Example: whiskey, cola, rum)</textarea><br>
+>>>>>>> 1435050358de9057d3e59237ee0f025b5fd396b6
             </div>
             <div class= "formright"> <!-- CLASS for right half of form -->
                 <input type="checkbox" name="drinktype" value="Shots">Shots<br>
