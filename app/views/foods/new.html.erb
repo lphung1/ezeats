@@ -1,5 +1,5 @@
 <!--
-@title index.html.erb
+@title new.html.erb
 @author The Stake Drivers
 @description   --Create HTML page.
 -->
@@ -26,20 +26,16 @@
         <div class="boxed"><h2>&diams; CREATE A RECIPE &diams;<h2></div>
 
         <form class= "formcreate">
-            <p>What Kind of Recipe are you Creating?</p>
+            <p id="pheading">WHAT KIND OF RECIPE ARE YOU CREATING?</p>
             <input type="radio" name="fooddrink" value="Food"> Food<br>
             <input type="radio" name="fooddrink" value="Drink"> Drink<br>
-            <p>Name:</p><br>
+            <p id="pheading">NAME:</p><br>
             <input type="text" name="Name"><br>
-            <p>Ingredients:</p><br>
+            <p id="pheading">INGREDIENTS:</p><br>
             <input type="text" name="Ingredients"><br><br>
-            <p>Preparing the Recipe:</p>
+            <p id="pheading">NOTES FOR PREPARING THE RECIPE:</p>
             <textarea name="ingredients" rows="11" cols="120" placeholder = "Please enter steps in how to prepare your recipe, preferrably numbered and in order." ></textarea></textarea><br>
             <button class="submit" type="submit">SUBMIT</button><!-- SUBMIT button -->
-            <input type="text" name="Ingredients"><br>
-            <p>Preparing the Recipe:</p>
-            <textarea name="ingredients" rows="11" cols="120" placeholder = "Please enter steps in how to prepare your recipe, preferrably numbered and in order." ></textarea></textarea><br>
-            <input type="submit" value="Submit">
         </form>
     </main>
     <footer> <!-- Footer containing copyright symbol and 'Contact Us' link. -->

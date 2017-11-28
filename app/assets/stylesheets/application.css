@@ -118,18 +118,23 @@ footer a:hover{
 
 /*Left half form specifications. FOODS, DRINKS PAGES*/
 .formleft {
-    width: 40%;
-    border:1px solid blue;
+    width: 50%;
+    /*border: 1px solid blue; /*TEMPORARY FOR DIV MAPPING */
     margin-left: 50px;
     display: inline-block;
+    padding-left: 30px;
+    margin-top: -24px;
+    vertical-align: top;
 }
 
 /*Right half form specifications. FOODS, DRINKS PAGES*/
 .formright {
-    width: 40%;
-    border:1px solid red;
+    width: 35%;
+    /*border: 1px solid red; /*TEMPORARY FOR DIV MAPPING */
     display: inline-block;
-    margin-left: 100px;
+    padding-left: 30px;
+    margin-top: -24px;
+    vertical-align: top;
 }
 
 /*Heading background color and 5% transparency.*/
@@ -215,6 +220,13 @@ main {
     transform: scale(.95); 
 }
 
+#pheading {
+    font-size: 36px;
+    font-family: 'Just Another Hand', cursive; 
+    font-weight: bold;
+    font-style: italic;
+}
+
 /*Font size and type for app title. ALL PAGES */
 .site-title { 
     text-align: center;
@@ -258,16 +270,34 @@ main {
 table {
     margin: auto;
     margin-bottom: 40px;
+    box-shadow: 1px 1px 3px black;
+}
+
+/*Table data attributes*/
+table, td {
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    text-align: left;
+    background-color: #F2F2F2;
+    color: black;
+    text-shadow: none;
 }
 
 /*Table header attributes*/
 table, th {
-    text-align: center;
+    font-size: 32px;
+    font-family: 'Just Another Hand', cursive;
+    font-style: italic;
+    text-align: left;
+    background-color: #b7595e;
+    color: white;
+    text-shadow: 2px 2px #000000;
 }
 
-/*Table data attributes*/
+/*Table header and data attributes*/
 table, th, td {
-    border: 1px solid grey;
+    border: 1px solid black;
     border-collapse: collapse;
-    padding: 15px;
+    padding: 10px;
 }
