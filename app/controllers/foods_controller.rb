@@ -7,12 +7,12 @@ class FoodsController < ApplicationController
     #declares @foods variable to be used in html views
     def index
       @foods = Food.all
-      @drinks = Drink.all
+
     end
     #honestly not sure what this does anymore, just put it here because it seems like we would need it
     def new
       @foods = Food.new
-      @drinks = Drink.new
+
     end
 
     def show #supposed to show contents of a specific entry, currently not working

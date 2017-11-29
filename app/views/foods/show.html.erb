@@ -1,12 +1,11 @@
+<% @foods.each do |f| %>
 
-<p>
-  <strong>named:</strong>
-  <%= @food.name %>
-</p>
+<%= f.name %>
 
-<p>
-  <strong>Ingredients:</strong>
-  <%= @food.ingredients %>
-</p>
+<% end %>
 
+<% @foods.each do |f| %>
 
+<%= f.ingredients %>
+
+<% end %>
