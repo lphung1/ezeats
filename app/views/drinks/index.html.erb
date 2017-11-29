@@ -23,20 +23,19 @@
         </ul>
     </header>
     <main>
-        <div class="boxed"><h2>&diams; FIND DRINK RECIPES &diams;<h2></div>
+        <div class="boxedblue"><h2>&diams; FIND DRINK RECIPES &diams;<h2></div>
         <form class= "formdrink"> <!-- CLASS for drink form -->
-            <div class= "formleft"> <!-- CLASS for left half of form -->
-                <p>Enter drink ingredients here:</p>
-                
-                <textarea name="ingredients" rows="3" cols="50" placeholder = "Search for your possible recipes by entering ingredients, separated by commas. (Example: whiskey, cola, rum)" ></textarea></textarea><br>
-
+            <div class= "formleftdrink"> <!-- CLASS for left half of form -->
+                <p id="pheading">ENTER DRINK INGREDIENTS HERE:</p>
+                <textarea name="ingredients" rows="3" cols="80" placeholder = "Search for your possible recipes by entering ingredients, separated by commas. (Example: whiskey, cola, rum)" ></textarea></textarea><br>
             </div>
-            <div class= "formright"> <!-- CLASS for right half of form -->
+            <div class= "formrightdrink"> <!-- CLASS for right half of form -->
+                <p id="pheading">SELECT DRINK TYPE:</p>
                 <input type="checkbox" name="drinktype" value="Shots">Shots<br>
                 <input type="checkbox" name="drinktype" value="Shots">Cocktails<br>
                 <input type="checkbox" name="drinktype" value="Shots">Liqueurs<br>
             </div>
-            <button class="submit" type="submit">SEARCH</button><!-- SUBMIT button -->
+            <button class="search" type="submit">SEARCH</button><!-- SUBMIT button -->
         </form>
     </main>
     <footer> <!-- Footer containing copyright symbol and 'Contact Us' link. -->

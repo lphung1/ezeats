@@ -1,5 +1,5 @@
 <!--
-@title index.html.erb
+@title new.html.erb
 @author The Stake Drivers
 @description   --Create HTML page.
 -->
@@ -8,8 +8,8 @@
 <head>
 	<title>EZ Eats - Home</title> <!-- Title of page -->
 	<link rel="stylesheet" href="../../assets/stylesheets/application.css" /> <!-- Import style sheet -->
-	<link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet"><!-- HANDWRITTEN FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet"><!-- MAIN FONT -->
 </head>
 
 <body class="create-body">
@@ -19,20 +19,23 @@
             <li><%= link_to 'HOME' , controller: 'home' %></li>
             <li><%= link_to 'FOOD' , controller: 'foods' %></li>
             <li><%= link_to 'DRINKS' , controller: 'drinks' %></li>
-            <li><%= link_to 'CREATE' , new_food_path %></li>
+            <li><%= link_to 'CREATE' , controller: 'create' %></li>
         </ul>
     </header>
     <main>
-        <div class="boxed"><h2>&diams; CREATE A RECIPE &diams;<h2></div>
+        <div class="boxedblue"><h2>&diams; CREATE A RECIPE &diams;<h2></div>
 
         <form class= "formcreate">
-            <p>Food Name:</p><br>
+            <p id="pheading">WHAT KIND OF RECIPE ARE YOU CREATING?</p>
+            <input type="radio" name="fooddrink" value="Food"> Food
+            <input type="radio" name="fooddrink" value="Drink"> Drink<br><br>
+            <p>Recipe Name:</p><br>
             <input type="text" name="Name"><br>
-            <p>Ingredients:</p><br>
-            <input type="text" name="Ingredients"><br>
-            <p>Preparing the Recipe:</p>
+            <p>Ingredients Used:</p><br>
+            <input type="text" name="Ingredients"><br><br>
+            <p>Notes for preparation of recipe:</p>
             <textarea name="ingredients" rows="11" cols="120" placeholder = "Please enter steps in how to prepare your recipe, preferrably numbered and in order." ></textarea></textarea><br>
-            <input type="submit" value="Submit">
+            <button class="submit" type="submit">SUBMIT</button><!-- SUBMIT button -->
         </form>
     </main>
     <footer> <!-- Footer containing copyright symbol and 'Contact Us' link. -->

@@ -23,14 +23,14 @@
         </ul>
     </header>
     <main>
-        <div class="boxed"><h2>&diams; FEATURED ITEMS &diams;</h2></div><!-- Content will go here -->
-				<table style="width:80%"><!-- Table for food results and stats. -->
+        <div class="boxedblue"><h2>&diams; FEATURED ITEMS &diams;</h2></div><!-- Content will go here -->
+				<table style="width:92%"><!-- Table for food results and stats. -->
                     <tr><!-- BEGIN table heading -->
-                        <th>Photo</th>
-                        <th>Foods</th>
-                        <th>Ingredients</th>
-                        <th>Reviews? (1 - 5 Stars)</th>
-                        <th>Instructions?</th>
+                        <th>PHOTO</th>
+                        <th>FOODS</th>
+                        <th>INGREDIENTS</th>
+                        <th>REVIEWS (1-5 STARS)</th>
+                        <th>INSTRUCTIONS</th>
                     </tr><!-- END table heading -->
                     <tr><!-- BEGIN table 1st row -->
                         <td><img src="https://www.goodfreephotos.com/albums/vector-images/piece-of-cheese.png" alt="Cheese" height="60px" width="50px"></td>
@@ -38,8 +38,8 @@
 					        <%= f.name %><% end %></td>
                         <td><% @foods.each do |f| %>
 					        <%= f.ingredients %><% end %></td>
-					    <td>Insert Review Here!</td>
-					    <td>Insert Instructions Here!</td>
+					    <td>5 Stars</td>
+					    <td>1) Purchase from any store.<br>2) Consume thy cheese.</td>
 					</tr><!-- END table 1st row -->
                 </table>
     </main>
