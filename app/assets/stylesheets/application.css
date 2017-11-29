@@ -12,13 +12,13 @@ a {
 }
 
 /*Colored boxing that appears in main around headings*/
-.boxed {
+.boxedblue {
     border: 3px;
     background-color: #6BBAA7;
 }
 
 /*h2 element stylings within boxed CLASS div.*/
-.boxed h2 {
+.boxedblue h2 {
     text-align: center;
     font-family: 'Just Another Hand', cursive;
     font-size: 50px;
@@ -74,9 +74,8 @@ a {
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: auto;
-    position: fixed;
     padding:0;
-    overflow: scroll;
+    overflow: scroll; 
 }
 
 /*Body background image and settings. FOODS PAGE*/
@@ -97,7 +96,7 @@ a {
 footer { 
     text-align: center;
     font-family: 'Just Another Hand', cursive;
-    background-color: #FBA100;
+    background: radial-gradient(#FBA100 60%, #bc7901);
     opacity: 0.95;
     font-size: 30px;
     color: white;
@@ -113,33 +112,107 @@ footer a:hover{
 
 /*Form specifications for CREATE PAGE*/
 .formcreate {
-    margin-left: 50px;
+    width: 80%;
+    height: 90%;
+    display: inline-block;
+    padding-left: 30px;
+    margin-left: 8.7%;
+    margin-top: -24px;
+    margin-bottom: 50px;
+    vertical-align: top;
+    background: linear-gradient(#005e01, #00c602);
+    border-style: groove;
+    border-color: black;
+    border-width: 2px;
+    color: white;
+    text-shadow: 2px 2px #000000;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 12px;
 }
 
-/*Left half form specifications. FOODS, DRINKS PAGES*/
-.formleft {
+/*Left half form specifications. DRINKS PAGE*/
+.formleftdrink {
     width: 50%;
-    /*border: 1px solid blue; /*TEMPORARY FOR DIV MAPPING */
-    margin-left: 50px;
+    height: 350px;
+    margin-left: 3%;
     display: inline-block;
     padding-left: 30px;
     margin-top: -24px;
+    margin-bottom: 30px;
     vertical-align: top;
+    background: linear-gradient(#291030, #722d84);
+    border-style: solid;
+    border-color: #250e2b;
+    border-width: 4px;
+    border-radius: 12px;
+    color: white;
+    text-shadow: 2px 2px #000000;
+    box-shadow: 4px 4px 8px black;
 }
 
-/*Right half form specifications. FOODS, DRINKS PAGES*/
-.formright {
+/*Right half form specifications. DRINKS PAGE*/
+.formrightdrink {
     width: 35%;
-    /*border: 1px solid red; /*TEMPORARY FOR DIV MAPPING */
+    height: 350px;
+    display: inline-block;
+    margin-left: 30px;
+    padding-left: 30px;
+    margin-top: -24px;
+    margin-bottom: 30px;
+    vertical-align: top;
+    background: linear-gradient(#291030, #722d84);
+    border-style: solid;
+    border-color: #250e2b;
+    border-width: 4px;
+    border-radius: 12px;
+    color: white;
+    text-shadow: 2px 2px #000000;
+    box-shadow: 4px 4px 8px black;
+}
+
+/*Left half form specifications. FOODS PAGE*/
+.formleftfood {
+    width: 50%;
+    height: 350px;
+    margin-left: 3%;
     display: inline-block;
     padding-left: 30px;
     margin-top: -24px;
+    margin-bottom: 30px;
     vertical-align: top;
+    background: linear-gradient(#870000, #ff0000);
+    border-style: solid;
+    border-color: #680000;
+    border-width: 4px;
+    border-radius: 12px;
+    color: white;
+    text-shadow: 2px 2px black;
+    box-shadow: 4px 4px 8px black;
+}
+
+/*Right half form specifications. FOODS PAGE*/
+.formrightfood {
+    width: 35%;
+    height: 350px;
+    display: inline-block;
+    margin-left: 30px;
+    padding-left: 30px;
+    margin-top: -24px;
+    margin-bottom: 30px;
+    vertical-align: top;
+    background: linear-gradient(#870000, #ff0000);
+    border-style: solid;
+    border-color: #680000;
+    border-width: 4px;
+    border-radius: 12px;
+    color: white;
+    text-shadow: 2px 2px black;
+    box-shadow: 4px 4px 8px black;
 }
 
 /*Heading background color and 5% transparency.*/
-header { 
-    background-color: #FBA100; /*Orange*/
+header {
+    background: radial-gradient(#FBA100 60%, #bc7901);
     opacity: 0.95;
 }
 
@@ -177,10 +250,11 @@ input[type=text]:focus {
 
 /*Attributes regarding main content space of page. EVERY PAGE*/
 main { 
+    background: radial-gradient(#F2F2F2 80%, #ccc9c9);
     background-color: #F2F2F2;
     border-style: groove;
     border: 5px solid #6BBAA7; /*Blue*/
-    opacity: 0.98;
+    opacity: 0.965;
     transition: 1s opacity;
     height: 100%;
     width: 93%;
@@ -221,10 +295,36 @@ main {
 }
 
 #pheading {
-    font-size: 36px;
+    font-size: 45px;
     font-family: 'Just Another Hand', cursive; 
     font-weight: bold;
     font-style: italic;
+}
+
+.search {
+    background-color: #FBA100; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin: 10px 40% 20px 45.5%;
+    font-family: 'Just Another Hand', cursive;
+    text-shadow: 2px 2px #000000;
+    box-shadow: 2px 2px 10px #000000;
+    border-radius: 4px;
+}
+
+/*Alters submit button appearence when hovered over by mouse.*/
+.search:hover {
+    font-weight: bold; 
+}
+
+/*Shrinks button on click for visual aid.*/
+.search:active {
+    transform: scale(.98); 
 }
 
 /*Font size and type for app title. ALL PAGES */
@@ -244,12 +344,12 @@ main {
     background-color: #FBA100; /* Green */
     border: none;
     color: white;
-    padding: 10px 32px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 40px;
-    margin: 20px 50% 20px 44.5%;
+    margin: 10px 40% 20px 42.7%;
     font-family: 'Just Another Hand', cursive;
     text-shadow: 2px 2px #000000;
     box-shadow: 2px 2px 10px #000000;
@@ -278,8 +378,8 @@ table, td {
     font-size: 16px;
     font-family: 'Fira Sans', sans-serif;
     font-style: normal;
-    text-align: left;
-    background-color: #F2F2F2;
+    text-align: center;
+    background-color: #eaffb2;
     color: black;
     text-shadow: none;
 }
@@ -289,15 +389,16 @@ table, th {
     font-size: 32px;
     font-family: 'Just Another Hand', cursive;
     font-style: italic;
-    text-align: left;
-    background-color: #b7595e;
+    text-align: center;
+    background: linear-gradient(#309b12, #3fd117);
+    background-color: #3fd117;
     color: white;
     text-shadow: 2px 2px #000000;
 }
 
 /*Table header and data attributes*/
 table, th, td {
-    border: 1px solid black;
+    border-bottom: 1px solid grey;
     border-collapse: collapse;
     padding: 10px;
 }
