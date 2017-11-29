@@ -120,14 +120,16 @@ footer a:hover{
     margin-top: -24px;
     margin-bottom: 50px;
     vertical-align: top;
-    background: linear-gradient(#005e01, #00c602);
-    border-style: groove;
+    background: linear-gradient(#5c2289, #00d10a);
+    border-style: solid;
     border-color: black;
-    border-width: 2px;
+    border-width: 3px;
     color: white;
     text-shadow: 2px 2px #000000;
     box-shadow: 2px 2px 5px black;
     border-radius: 12px;
+    position: relative;
+    opacity: 1.0;
 }
 
 /*Left half form specifications. DRINKS PAGE*/
@@ -232,20 +234,15 @@ header {
 
  /*Default text box style.*/
 input[type=text] {
-    width: 170px;
+    width: 260px;
     background-color: white;
     color: black;
-    font-family: Verdana,Geneva, sans-serif;
-    -webkit-transition: width 1s ease-in-out;
-    transition: width 1s ease-in-out;
-    border-color: black;
-    border-radius: 4px;
+    font-family: 'Fira Sans', sans-serif;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 2px;
+    margin-top: -80px;
     
-}
-
-/*When the input field gets focus, change its width to 80%.*/
-input[type=text]:focus { 
-    width: 80%;
 }
 
 /*Attributes regarding main content space of page. EVERY PAGE*/
@@ -294,6 +291,7 @@ main {
     transform: scale(.95); 
 }
 
+/*Headings used for div boxes within main.*/
 #pheading {
     font-size: 45px;
     font-family: 'Just Another Hand', cursive; 
