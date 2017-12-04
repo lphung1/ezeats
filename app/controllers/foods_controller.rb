@@ -2,6 +2,7 @@ class FoodsController < ApplicationController
 
     def foods
       #not even sure why this is here
+      @foods = Food.all
     end
 
     #declares @foods variable to be used in html views
@@ -22,7 +23,7 @@ class FoodsController < ApplicationController
     def create #supposed to create a new entry.
       @foods = Food.new(food_params)
       @foods.save
-      redirect_to @foods
+      redirect_to @home
     end
 
     private #declares param requirements when creating new entry
