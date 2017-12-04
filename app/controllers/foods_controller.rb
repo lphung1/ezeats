@@ -23,7 +23,7 @@ class FoodsController < ApplicationController
     def create #supposed to create a new entry.
       @foods = Food.new(food_params)
       @foods.save
-      redirect_to @home
+      redirect_to controller: "home", action: "index"
     end
 
     private #declares param requirements when creating new entry
