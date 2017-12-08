@@ -6,22 +6,14 @@
 
 <!DOCTYPE html> <!-- BEGINNING OF PROGRAM -->
 <head>
-	<title>EZ Eats - Home</title> <!-- Title of page -->
+	<title>EZ Eats - Contact</title> <!-- Title of page -->
 	<link rel="stylesheet" href="../../assets/stylesheets/application.css" /> <!-- Import style sheet -->
 	<link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 </head>
 
 <body class="contact-body">
-    <header>
-        <h1 class = "site-title">EZ EATS</h1> <!-- Main content of page -->
-        <ul class = "nav"> <!-- CLASS for horizontal nav bar on top of page -->
-            <li><%= link_to 'HOME' , controller: 'home' %></li>
-            <li><%= link_to 'FOOD' , controller: 'foods' %></li>
-            <li><%= link_to 'DRINKS' , controller: 'drinks' %></li>
-            <li><%= link_to 'CREATE' , new_food_path %></li>
-        </ul>
-    </header>
+    <%= render 'foods/header' %>
     <main>
         <p id="contact"> &diams; CONTACT US! &diams;<br>
             Customer Service #: 704-867-5309<br>
