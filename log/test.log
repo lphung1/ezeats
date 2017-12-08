@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   [1m[36m (3.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
   [1m[35m (0.1ms)[0m  select sqlite_version(*)
   [1m[36m (3.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
@@ -46,3 +47,487 @@ Migrating to FixTypo (20171112232732)
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+=======
+  [1m[36m (17.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (13.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateRecipes (20171102200508)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "recipes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "meat" varchar, "ingredients" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171102200508"]]
+  [1m[35m (15.2ms)[0m  commit transaction
+Migrating to CreateDrinks (20171106210952)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "drinks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "d_ingredients" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171106210952"]]
+  [1m[35m (11.1ms)[0m  commit transaction
+Migrating to AddRecipeName (20171110000609)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "recipes" ADD "name" varchar
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171110000609"]]
+  [1m[35m (14.6ms)[0m  commit transaction
+Migrating to ChangingModelName (20171112215418)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "recipes" RENAME TO "food"
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171112215418"]]
+  [1m[35m (11.8ms)[0m  commit transaction
+Migrating to RemovingFoodTable (20171112221814)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "food"
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171112221814"]]
+  [1m[35m (11.3ms)[0m  commit transaction
+Migrating to CreateFoods (20171112222126)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "foods" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "ingrediest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171112222126"]]
+  [1m[35m (11.1ms)[0m  commit transaction
+Migrating to FixTypo (20171112232732)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.7ms)[0m  CREATE TEMPORARY TABLE "afoods" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "ingredients" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "foods"[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "foods"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "foods" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "ingredients" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "afoods"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "afoods"[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20171112232732"]]
+  [1m[36m (8.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:06:29 +0000
+Processing by HomeController#index as HTML
+  [1m[36mFood Load (0.2ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered home/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 812ms (Views: 797.9ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:08:02 +0000
+Processing by HomeController#index as HTML
+  [1m[36mFood Load (0.3ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered home/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 230ms (Views: 215.5ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:09:02 +0000
+Processing by HomeController#index as HTML
+  [1m[36mFood Load (0.2ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered home/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 214ms (Views: 202.9ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:11:03 +0000
+Processing by HomeController#index as HTML
+  [1m[36mFood Load (0.2ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered home/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 197ms (Views: 186.4ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:11:36 +0000
+Processing by HomeController#index as HTML
+  [1m[36mFood Load (0.2ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered home/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 244ms (Views: 232.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:13:31 +0000
+Processing by HomeController#index as HTML
+  [1m[36mFood Load (0.2ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered home/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 229ms (Views: 217.8ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:16:40 +0000
+Processing by HomeController#index as HTML
+  [1m[36mFood Load (0.2ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered home/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 213ms (Views: 201.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:17:28 +0000
+Processing by HomeController#index as HTML
+  [1m[36mFood Load (0.2ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered home/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 211ms (Views: 197.0ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:26:43 +0000
+Processing by HomeController#index as HTML
+  [1m[36mFood Load (0.3ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered home/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 235ms (Views: 221.6ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:26:44 +0000
+Processing by HomeController#index as HTML
+  [1m[35mFood Load (0.3ms)[0m  SELECT "foods".* FROM "foods"
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:27:32 +0000
+Processing by HomeController#index as HTML
+  [1m[36mFood Load (0.3ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered home/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 218ms (Views: 203.8ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:27:32 +0000
+Processing by HomeController#index as HTML
+  [1m[35mFood Load (0.4ms)[0m  SELECT "foods".* FROM "foods"
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:28:19 +0000
+Processing by HomeController#index as HTML
+  [1m[36mFood Load (0.2ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered home/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 227ms (Views: 215.8ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:28:19 +0000
+Processing by HomeController#index as HTML
+  [1m[35mFood Load (0.3ms)[0m  SELECT "foods".* FROM "foods"
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:29:58 +0000
+Processing by HomeController#index as HTML
+  [1m[36mFood Load (0.2ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered home/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 180ms (Views: 164.8ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:29:58 +0000
+Processing by HomeController#index as HTML
+  [1m[35mFood Load (0.2ms)[0m  SELECT "foods".* FROM "foods"
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:30:31 +0000
+Processing by HomeController#index as HTML
+  [1m[36mFood Load (0.2ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered home/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 217ms (Views: 203.6ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:30:32 +0000
+Processing by HomeController#index as HTML
+  [1m[35mFood Load (0.2ms)[0m  SELECT "foods".* FROM "foods"
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:30:47 +0000
+Processing by HomeController#index as HTML
+  [1m[36mFood Load (0.2ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered home/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 238ms (Views: 226.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:30:47 +0000
+Processing by HomeController#index as HTML
+  [1m[35mFood Load (0.3ms)[0m  SELECT "foods".* FROM "foods"
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:31:31 +0000
+Processing by HomeController#index as HTML
+  [1m[36mFood Load (0.3ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered home/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 208ms (Views: 196.3ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:31:32 +0000
+Processing by HomeController#index as HTML
+  [1m[35mFood Load (0.2ms)[0m  SELECT "foods".* FROM "foods"
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:31:47 +0000
+Processing by HomeController#index as HTML
+  [1m[36mFood Load (0.3ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered home/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 243ms (Views: 224.9ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:31:47 +0000
+Processing by HomeController#index as HTML
+  [1m[35mFood Load (0.2ms)[0m  SELECT "foods".* FROM "foods"
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:32:09 +0000
+Processing by HomeController#index as HTML
+  [1m[36mFood Load (0.3ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered home/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 207ms (Views: 194.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:32:09 +0000
+Processing by HomeController#index as HTML
+  [1m[35mFood Load (0.2ms)[0m  SELECT "foods".* FROM "foods"
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:32:29 +0000
+Processing by HomeController#index as HTML
+  [1m[36mFood Load (0.3ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered home/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 248ms (Views: 236.4ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:32:29 +0000
+Processing by HomeController#index as HTML
+  [1m[35mFood Load (0.3ms)[0m  SELECT "foods".* FROM "foods"
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:32:39 +0000
+Processing by HomeController#index as HTML
+  [1m[36mFood Load (0.3ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered home/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 237ms (Views: 222.6ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:32:39 +0000
+Processing by HomeController#index as HTML
+  [1m[35mFood Load (0.2ms)[0m  SELECT "foods".* FROM "foods"
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:35:15 +0000
+Processing by HomeController#index as HTML
+  [1m[36mFood Load (0.2ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered home/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 217ms (Views: 204.9ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:35:15 +0000
+Processing by HomeController#index as HTML
+  [1m[35mFood Load (0.2ms)[0m  SELECT "foods".* FROM "foods"
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:35:53 +0000
+Processing by HomeController#index as HTML
+  [1m[36mFood Load (0.2ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered home/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 204ms (Views: 191.1ms | ActiveRecord: 0.3ms)
+Started GET "/foods/new" for 127.0.0.1 at 2017-12-06 21:35:53 +0000
+Processing by FoodsController#new as HTML
+  Rendered foods/_form.html.erb (36.8ms)
+  Rendered foods/new.html.erb within layouts/application (47.1ms)
+Completed 200 OK in 57ms (Views: 52.8ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:35:53 +0000
+Processing by HomeController#index as HTML
+  [1m[35mFood Load (0.2ms)[0m  SELECT "foods".* FROM "foods"
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+Started GET "/foods" for 127.0.0.1 at 2017-12-06 21:35:53 +0000
+Processing by FoodsController#index as HTML
+  Rendered foods/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:44:08 +0000
+Processing by HomeController#index as HTML
+  [1m[36mFood Load (0.3ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered home/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 185ms (Views: 173.9ms | ActiveRecord: 0.3ms)
+Started GET "/contact" for 127.0.0.1 at 2017-12-06 21:44:08 +0000
+Processing by ContactController#index as HTML
+  Rendered contact/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:44:08 +0000
+Processing by HomeController#index as HTML
+  [1m[35mFood Load (0.2ms)[0m  SELECT "foods".* FROM "foods"
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms)
+Started GET "/foods/new" for 127.0.0.1 at 2017-12-06 21:44:08 +0000
+Processing by FoodsController#new as HTML
+  Rendered foods/_form.html.erb (15.3ms)
+  Rendered foods/new.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 30ms (Views: 25.9ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:44:08 +0000
+Processing by HomeController#index as HTML
+  [1m[36mFood Load (0.2ms)[0m  [1mSELECT "foods".* FROM "foods"[0m
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+Started GET "/drinks" for 127.0.0.1 at 2017-12-06 21:44:08 +0000
+Processing by DrinksController#index as HTML
+  Rendered drinks/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2017-12-06 21:44:08 +0000
+Processing by HomeController#index as HTML
+  [1m[35mFood Load (0.2ms)[0m  SELECT "foods".* FROM "foods"
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+Started GET "/foods" for 127.0.0.1 at 2017-12-06 21:44:08 +0000
+Processing by FoodsController#index as HTML
+  Rendered foods/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+>>>>>>> fc79d63ff28e095a7567ebbbb59fdb4bfe8dd25c
