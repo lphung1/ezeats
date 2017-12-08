@@ -5,10 +5,10 @@ class FoodsController < ApplicationController
       #@foods = Food.all
     end
 
-    #declares @foods variable to be used in html views
+    #declares @foods variables to be used in html views
     def index
       @foods = Food.all
-      if params[:search]
+      if params[:search] #when using :search parameter, call the following search function.
         @foods = Food.search(params[:search]).order("created_at DESC")
       else
         @foods = Food.all.order("created_at DESC")
@@ -16,7 +16,7 @@ class FoodsController < ApplicationController
 
     end
 
-    #honestly not sure what this does anymore, just put it here because it seems like we would need it
+    #Creates new Food record just put it here because it seems like we would need it
     def new
       @foods = Food.new
 

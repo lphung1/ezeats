@@ -1,13 +1,14 @@
 
-<!--start of experimental search -->
+<!--Partial form for search feature, searches for recipies that contain ingredients
+or by name, -->
 <%= form_tag(foods_path, :method => "get", id: "search-form") do %>
 <%= text_field_tag :search, params[:search], placeholder: "Search Foods" %>
 <%= submit_tag "Search", :name => nil %>
 <% end %>
-
+<!--Renders the results below. Will need to make it look pretty. -->
 <% @foods.each do |f| %>
   <p>
     <%= f.name %>
+    <%= f.ingredients %>
   </p>
 <% end %>
-<!--end of experimental search -->
