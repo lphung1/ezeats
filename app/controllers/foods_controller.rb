@@ -8,7 +8,12 @@ class FoodsController < ApplicationController
     #declares @foods variable to be used in html views
     def index
       @foods = Food.all
-      @foods = Food.search(params[:search])
+      if params[:search]
+        @foods = Food.search(params[:search]).order("created_at DESC")
+      else
+        @foods = Food.all.order("created_at DESC")
+      end
+
     end
 
     #honestly not sure what this does anymore, just put it here because it seems like we would need it
@@ -18,7 +23,7 @@ class FoodsController < ApplicationController
     end
 
     def show #supposed to show contents of a specific entry, currently not working
-      @foods = Food.find(params[:id])
+      @foods = Food.search(params[:search])
     end
 
     def create #Creates a new entry and saves it to the foods model and redirects to home/index
