@@ -8,8 +8,8 @@
 <head>
 	<title>EZ Eats - Foods</title> <!-- Title of page -->
 	<link rel="stylesheet" href="../../assets/stylesheets/application.css" /> <!-- Import style sheet -->
-	<link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet"><!-- HANDWRITTEN FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet"><!-- Main font. -->
 </head>
 
 <body class="foods-body">
@@ -25,21 +25,20 @@
     <main>
         <div class="boxedblue"><h2>&diams; FIND FOOD RECIPES &diams;</h2></div>
         <form class= "formfood"> <!-- CLASS for food form -->
-            <div class= "formleftfood"> <!-- CLASS for left half of form -->
+            <div class= "formtfood"> <!-- CLASS for left half of form -->
                 <p id="pheading">ENTER FOOD INGREDIENTS HERE:</p>
-                <textarea name="ingredients" rows="3" cols="80" placeholder = "Search for your possible recipes by entering ingredients, separated by commas. (Example: Chicken, cilantro, cheese)" ></textarea></textarea><br>
+                <%= render 'search' %>
             </div>
-            <div class= "formrightfood"> <!-- CLASS for right half of form -->
-                <p id="pheading">SELECT FLAVOR PROFILE:</p>
-                <input type="checkbox" name="flavor" value="Savoury">Savoury<br>
-                <input type="checkbox" name="flavor" value="Spicy">Spicy<br>
-                <input type="checkbox" name="flavor" value="Sweet">Sweet<br>
-                <input type="checkbox" name="flavor" value="Fruity">Fruity<br>
-                <input type="checkbox" name="flavor" value="Tart">Tart<br>
+            <div class= "formbfood"> <!-- CLASS for right half of form -->
+                <p id="pheading">RESULTS:</p>
+                <% @foods.each do |f| %>
+                <p>
+                    <b><%= f.name %>:</b>
+                    <%= f.ingredients %>
+                </p>
+                <% end %>
             </div>
-            <button class="search" type="submit">SEARCH</button>
-
-        </form> <%= render 'search' %>
+        </form>
     </main>
     <footer> <!-- Footer containing copyright symbol and 'Contact Us' link. -->
         <p>&copy; The Stake Drivers - <%= link_to 'Contact Us' , controller: 'contact' %> - EZ Eats &trade;</p>

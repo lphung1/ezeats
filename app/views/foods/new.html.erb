@@ -6,10 +6,10 @@
 
 <!DOCTYPE html> <!-- BEGINNING OF PROGRAM -->
 <head>
-	<title>EZ Eats - Home</title> <!-- Title of page -->
+	<title>EZ Eats - Create</title> <!-- Title of page -->
 	<link rel="stylesheet" href="../../assets/stylesheets/application.css" /> <!-- Import style sheet -->
 	<link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet"><!-- HANDWRITTEN FONT -->
-	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet"><!-- MAIN FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet"><!-- Main font. -->
 </head>
 
 <body class="create-body">
@@ -19,25 +19,15 @@
             <li><%= link_to 'HOME' , controller: 'home' %></li>
             <li><%= link_to 'FOOD' , controller: 'foods' %></li>
             <li><%= link_to 'DRINKS' , controller: 'drinks' %></li>
-            <li><%= link_to 'Create' , 'new_food_path' %></li>
+            <li><%= link_to 'CREATE' , new_food_path %></li>
         </ul>
     </header>
     <main>
         <div class="boxedblue"><h2>&diams; CREATE A RECIPE &diams;<h2></div>
-
         <form class= "formcreate">
             <p id="pheading">WHAT KIND OF RECIPE ARE YOU CREATING?</p>
-            <input type="radio" name="fooddrink" value="Food"> Food
-            <input type="radio" name="fooddrink" value="Drink"> Drink<br><br>
-            <p>Recipe Name:</p><br>
-            <input type="text" name="Name"><br>
-            <p>Ingredients Used:</p><br>
-            <input type="text" name="Ingredients"><br><br>
-            <p>Notes for preparation of recipe:</p>
-            <textarea name="ingredients" rows="11" cols="120" placeholder = "Please enter steps in how to prepare your recipe, preferrably numbered and in order." ></textarea></textarea><br>
-            <button class="submit" type="submit">SUBMIT</button><!-- SUBMIT button -->
-        </form>	<%= render 'form' %>
-
+            <%= render 'form' %>
+        </form>
     </main>
     <footer> <!-- Footer containing copyright symbol and 'Contact Us' link. -->
         <p>&copy; The Stake Drivers - <%= link_to 'Contact Us' , controller: 'contact' %> - EZ Eats &trade;</p>
