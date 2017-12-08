@@ -34,7 +34,7 @@ class FoodsController < ApplicationController
 
     private #declares param requirements when creating new entry
     def food_params
-        params.require(:food).permit(:name, :ingredients)
+        params.require(:food).permit(:name, :ingredients, :instructions)
     end
 
 end
