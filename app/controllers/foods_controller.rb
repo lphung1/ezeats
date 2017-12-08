@@ -2,7 +2,7 @@ class FoodsController < ApplicationController
 
     def foods
       #not even sure why this is here
-      @foods = Food.all
+      #@foods = Food.all
     end
 
     #declares @foods variable to be used in html views
