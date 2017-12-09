@@ -27,7 +27,7 @@ a {
     text-shadow: 2px 2px #000000;
 }
 
-/*General button appearence.*/
+/*General button appearence. NOT CURRENTLY USED*/
 button {
     background-color: #FBA100; /* Orange */
     border: none;
@@ -353,7 +353,8 @@ table {
     margin: auto;
     margin-bottom: 25px;
     margin-top: -25px;
-    box-shadow: 1px 1px 3px black;
+    box-shadow: 2px 2px 5px black;
+    border: 1px solid black;
 }
 
 /*Table data attributes*/
@@ -373,15 +374,14 @@ table, th {
     font-family: 'Just Another Hand', cursive;
     font-style: italic;
     text-align: center;
-    background: linear-gradient(#9543b2, #da72ff);
-    background-color: #9543b2;
+    background-color: #5f9e4b;
     color: white;
     text-shadow: 2px 2px #000000;
 }
 
 /*Table header and data attributes*/
 table, th, td {
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid black;
     border-collapse: collapse;
     padding: 10px;
 }

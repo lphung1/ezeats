@@ -1,0 +1,27 @@
+<!-- Partial for all table data on HOME page. -->
+<table style="width:92%"><!-- Table for food results and stats. -->
+    <tr><!-- BEGIN table heading -->
+        <th>PHOTO</th>
+        <th>FOODS</th>
+        <th>INGREDIENTS</th>
+        <th>INSTRUCTIONS</th>
+    </tr><!-- END table heading -->
+    <tr><!-- BEGIN table 1st row -->
+        <td><img src="https://www.goodfreephotos.com/albums/vector-images/piece-of-cheese.png" alt="Cheese" height="60px" width="50px"></td>
+        <td><% @foods.each do |f| %><%= f.name %><% end %></td>
+        <td><% @foods.each do |f| %><%= f.ingredients %><% end %></td>
+		<td><% @foods.each do |f| %><%= f.instructions %><% end %></td>        
+	</tr><!-- END table 1st row -->
+	<tr><!-- BEGIN table 2nd row -->
+		<td><img src="https://www.goodfreephotos.com/albums/vector-images/slice-of-apple-pie-vector-clipart.png" alt = "Cheese" height ="60px" width = "50px"></td>
+		<td><% @foods.each do |f| %><%= f.name %><% end %></td>
+        <td><% @foods.each do |f| %><%= f.ingredients %><% end %></td>
+        <td><% @foods.each do |f| %><%= f.instructions %><% end %></td> 
+	</tr><!-- END table 2nd row -->
+	<tr><!-- BEGIN table 3nd row -->
+		<td><img src="https://www.goodfreephotos.com/albums/vector-images/slice-of-apple-pie-vector-clipart.png" alt = "Cheese" height ="60px" width = "50px"></td>
+		<td><% @foods.each do |f| %><%= f.name %><% end %></td>
+        <td><% @foods.each do |f| %><%= f.ingredients %><% end %></td>
+        <td><% @foods.each do |f| %><%= f.instructions %><% end %></td> 
+	</tr><!-- END table 3nd row -->
+</table>
