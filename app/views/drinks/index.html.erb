@@ -7,9 +7,7 @@
 <!DOCTYPE html> <!-- BEGINNING OF PROGRAM -->
 <head>
 	<title>EZ Eats - Drinks</title> <!-- Title of page -->
-	<link rel="stylesheet" href="../../assets/stylesheets/application.css" /> <!-- Import style sheet -->
-	<link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet"><!-- HANDWRITTEN FONT -->
-	<link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet"><!-- MAIN FONT -->
+	<%= render 'foods/style' %>
 </head>
 
 <body class="drinks-body">
@@ -25,7 +23,5 @@
             </div>
         </form>
     </main>
-    <footer> <!-- Footer containing copyright symbol and 'Contact Us' link. -->
-        <p>&copy; The Stake Drivers - <%= link_to 'Contact Us' , controller: 'contact' %> - EZ Eats &trade;</p>
-    </footer>
+    <%= render 'foods/foot' %>
 </body>
