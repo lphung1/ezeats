@@ -14,53 +14,60 @@
     box-shadow: 2px 2px 10px #000000;
     border-radius: 4px;
   }
-  h3 {
-    font-size: 30px;
-    padding-left: 17%;
+  h5 {
+    font-size: 24px;
+    font-weight: 200;
+    padding-left: 30px;
   }
   input[type=text] {
-    width: 80%;
+    width: 93%;
     box-sizing: border-box;
-    border: 3px solid #ccc;
+    border: 3px solid #faffc6;
     transition: 0.5s;
     outline: none;
     font-size: 18px;
+    background: #faffc6;
+    box-shadow: 2px 2px 5px black;
   } 
   input[type=text]:focus {
-    border: 3px solid #555;
+    border: 3px solid #ffbb35;
   }
   textarea {
-    width: 80%;
-    height: 200px;
+    width: 93%;
+    height: 170px;
     box-sizing: border-box;
-    border: 3px solid #ccc;
+    border: 3px solid #faffc6;
     transition: 0.5s;
     outline: none;
     margin-top: 12px;
     font-size: 18px;
+    background: #faffc6;
+    box-shadow: 2px 2px 5px black;
   }
   textarea:focus {
-    border: 3px solid #555;
+    border: 3px solid #ffbb35;
   }  
 </style>
+<div class="formcreate">
+  <p id="pheading">WHAT KIND OF RECIPE ARE YOU CREATING?</p>
+  <%= form_for :food, url: foods_path do |f| %>
+  <h5>
+    <%= f.label :name %> for Custom Recipe:<br>
+    <%= f.text_field :name %>
+  </h5>
 
-<%= form_for :food, url: foods_path do |f| %>
-<h3>
-  <%= f.label :name %> for Recipe:<br>
-  <%= f.text_field :name %>
-</h3>
+  <h5>
+    <%= f.label :ingredients %> Required:<br>
+    <%= f.text_area :ingredients %>
+  </h5>
 
-<h3>
-  <%= f.label :ingredients %>:<br>
-  <%= f.text_area :ingredients %>
-</h3>
+  <h5>
+    <%= f.label :instructions %> for Preparation:<br>
+    <%= f.text_area :instructions %>
+  </h5>
 
-<h3>
-  <%= f.label :instructions %>:<br>
-  <%= f.text_area :instructions %>
-</h3>
-
-<h3>
-  <%= f.submit %>
-</h3>
-<% end %>
+  <h5>
+    <%= f.submit %>
+  </h5>
+  <% end %>
+</div>

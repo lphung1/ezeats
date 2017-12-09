@@ -1,6 +1,18 @@
-
 <!--Partial form for search feature, searches for recipies that contain ingredients
 or by name. -->
+<style>
+    input[type=text] {
+    width: 50%;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    transition: 0.5s;
+    outline: none;
+    font-size: 18px;
+  } 
+  input[type=text]:focus {
+    border: 3px solid #555;
+  }
+</style>
 <%= form_tag(foods_path, :method => "get", id: "search-form") do %>
 <%= text_field_tag :search, params[:search], placeholder: "Search for foods here." %>
 <%= submit_tag "Search", :name => nil %>

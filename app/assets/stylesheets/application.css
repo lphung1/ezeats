@@ -146,7 +146,7 @@ footer a:hover{
     margin-top: -24px;
     margin-bottom: 20px;
     vertical-align: top;
-    background: linear-gradient(#141E30, #3d6796);
+    background: linear-gradient(#005260, #724487);
     border-style: solid;
     border-color: black;
     border-width: 3px;
@@ -373,8 +373,8 @@ table, th {
     font-family: 'Just Another Hand', cursive;
     font-style: italic;
     text-align: center;
-    background: linear-gradient(#309b12, #3fd117);
-    background-color: #3fd117;
+    background: linear-gradient(#9543b2, #da72ff);
+    background-color: #9543b2;
     color: white;
     text-shadow: 2px 2px #000000;
 }
