@@ -7,36 +7,34 @@
 <!DOCTYPE html> <!-- BEGINNING OF PROGRAM -->
 <head>
 	<title>EZ Eats - Home</title> <!-- Title of page -->
-	<%= render 'foods/style' %>
+	<%= render 'foods/style' %> <!-- RENDERS fonts and stylesheet from partial. -->
 </head>
 
-<body class = "home-body">
+<body class = "home-body"> <!-- CLASS for body of page. -->
     <%= render 'foods/header' %>
     <main>
         <% food = @foods.first %>
         <div class="boxedblue"><h2>&diams; FEATURED ITEMS &diams;</h2></div><!-- Content will go here -->
-				<table style="width:92%"><!-- Table for food results and stats. -->
-                    <tr><!-- BEGIN table heading -->
-                        <th>PHOTO</th>
-                        <th>FOODS</th>
-                        <th>INGREDIENTS</th>
-                    </tr><!-- END table heading -->
-                    <tr><!-- BEGIN table 1st row -->
-                        <td><img src="https://www.goodfreephotos.com/albums/vector-images/piece-of-cheese.png" alt="Cheese" height="60px" width="50px"></td>
-                        <td><% @foods.each do |f| %>
-					        <%= f.name %><% end %></td>
-                        <td><% @foods.each do |f| %>
-					        <%= f.ingredients %>
-									<%= f.instructions %> <% end %></td>
-					</tr><!-- END table 1st row -->
-					<tr><!-- BEGIN table 2nd row -->
-					    <td><img src="https://www.goodfreephotos.com/albums/vector-images/slice-of-apple-pie-vector-clipart.png" alt = "Cheese" height ="60px" width = "50px"></td>
-					    <td><% @foods.each do |f| %>
-					        <%= f.name %><% end %></td>
-                        <td><% @foods.each do |f| %>
-					        <%= f.ingredients %><% end %></td>
-					</tr><!-- END table 2nd row -->
-                </table>
+			<table style="width:92%"><!-- Table for food results and stats. -->
+                <tr><!-- BEGIN table heading -->
+                    <th>PHOTO</th>
+                    <th>FOODS</th>
+                    <th>INGREDIENTS</th>
+                    <th>INSTRUCTIONS</th>
+                </tr><!-- END table heading -->
+                <tr><!-- BEGIN table 1st row -->
+                    <td><img src="https://www.goodfreephotos.com/albums/vector-images/piece-of-cheese.png" alt="Cheese" height="60px" width="50px"></td>
+                    <td><% @foods.each do |f| %><%= f.name %><% end %></td>
+                    <td><% @foods.each do |f| %><%= f.ingredients %><% end %></td>
+					<td><% @foods.each do |f| %><%= f.instructions %><% end %></td>        
+				</tr><!-- END table 1st row -->
+				<tr><!-- BEGIN table 2nd row -->
+					<td><img src="https://www.goodfreephotos.com/albums/vector-images/slice-of-apple-pie-vector-clipart.png" alt = "Cheese" height ="60px" width = "50px"></td>
+					<td><% @foods.each do |f| %><%= f.name %><% end %></td>
+                    <td><% @foods.each do |f| %><%= f.ingredients %><% end %></td>
+                    <td><% @foods.each do |f| %><%= f.instructions %><% end %></td> 
+				</tr><!-- END table 2nd row -->
+            </table>
     </main>
-    <%= render 'foods/foot' %>
+    <%= render 'foods/foot' %> <!-- RENDERS all footer info. -->
 </body>

@@ -7,17 +7,17 @@
 <!DOCTYPE html> <!-- BEGINNING OF PROGRAM -->
 <head>
 	<title>EZ Eats - Create</title> <!-- Title of page -->
-	<%= render 'style' %>
+	<%= render 'style' %> <!-- RENDERS fonts and stylesheet from partial. -->
 </head>
 
-<body class="create-body">
+<body class="create-body"> <!-- CLASS for body of page. -->
     <%= render 'header' %>
     <main>
         <div class="boxedblue"><h2>&diams; CREATE A RECIPE &diams;<h2></div>
         <form class= "formcreate">
             <p id="pheading">WHAT KIND OF RECIPE ARE YOU CREATING?</p>
         </form>
-				<%= render 'newFood' %>
+		<%= render 'newFood' %> <!-- RENDERS new recipe creation form. -->
     </main>
-    <%= render 'foot' %>
+    <%= render 'foot' %> <!-- RENDERS all footer info. -->
 </body>

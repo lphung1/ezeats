@@ -7,21 +7,21 @@
 <!DOCTYPE html> <!-- BEGINNING OF PROGRAM -->
 <head>
 	<title>EZ Eats - Drinks</title> <!-- Title of page -->
-	<%= render 'foods/style' %>
+	<%= render 'foods/style' %> <!-- RENDERS fonts and stylesheet from partial. -->
 </head>
 
-<body class="drinks-body">
+<body class="drinks-body"> <!-- CLASS for body of page. -->
     <%= render 'foods/header' %>
     <main>
         <div class="boxedblue"><h2>&diams; FIND DRINK RECIPES &diams;<h2></div>
         <form class= "formdrink"> <!-- CLASS for drink form -->
-            <div class= "formtdrink"> <!-- CLASS for left half of form -->
+            <div class= "formtdrink"> <!-- CLASS for top portion of form -->
                 <p id="pheading">ENTER DRINK INGREDIENTS HERE:</p>
             </div>
-            <div class= "formbdrink"> <!-- CLASS for right half of form -->
+            <div class= "formbdrink"> <!-- CLASS for bottom results. -->
                 <p id="pheading">RESULTS:</p>
             </div>
         </form>
     </main>
-    <%= render 'foods/foot' %>
+    <%= render 'foods/foot' %> <!-- RENDERS all footer info. -->
 </body>

@@ -7,28 +7,23 @@
 <!DOCTYPE html> <!-- BEGINNING OF PROGRAM -->
 <head>
 	<title>EZ Eats - Foods</title> <!-- Title of page -->
-	<%= render 'style' %>
+	<%= render 'style' %> <!-- RENDERS fonts and stylesheet from partial. -->
 </head>
 
-<body class="foods-body">
+<body class="foods-body"> <!-- CLASS for body of page. -->
     <%= render 'header' %>
     <main>
         <div class="boxedblue"><h2>&diams; FIND FOOD RECIPES &diams;</h2></div>
         <form class= "formfood"> <!-- CLASS for food form -->
-            <div class= "formtfood"> <!-- CLASS for left half of form -->
+            <div class= "formtfood"> <!-- CLASS for top portion of form -->
                 <p id="pheading">ENTER FOOD INGREDIENTS HERE:</p>
                 <%= render 'search' %>
             </div>
-            <div class= "formbfood"> <!-- CLASS for right half of form -->
+            <div class= "formbfood"> <!-- CLASS for bottom results. -->
                 <p id="pheading">RESULTS:</p>
-                <% @foods.each do |f| %>
-                <p>
-                    <b><%= f.name %>:</b>
-                    <%= f.ingredients %>
-                </p>
-                <% end %>
+                <% @foods.each do |f| %><p><b><%= f.name %>: </b><%= f.ingredients %></p><% end %>
             </div>
         </form>
     </main>
-    <%= render 'foot' %>
+    <%= render 'foot' %> <!-- RENDERS all footer info. -->
 </body>
