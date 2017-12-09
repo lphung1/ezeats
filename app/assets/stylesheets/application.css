@@ -140,13 +140,11 @@ footer a:hover{
 /*Form specifications for CREATE PAGE*/
 .formcreate {
     width: 80%;
-    height: 90%;
     display: inline-block;
     padding-left: 30px;
-    padding-bottom: 30px;
     margin-left: 8.7%;
     margin-top: -24px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     vertical-align: top;
     background: linear-gradient(#141E30, #3d6796);
     border-style: solid;
