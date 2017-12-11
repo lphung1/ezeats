@@ -15,17 +15,17 @@
     <main>
         <div class="boxedblue"><h2>&diams; FIND DRINK RECIPES &diams;<h2></div>
         <form class= "formdrink"> <!-- CLASS for drink form -->
-
             <div class= "formtdrink"> <!-- CLASS for top portion of form -->
                 <p id="pheading">ENTER DRINK INGREDIENTS HERE:</p>
-													<%= render 'search' %>
+                <img class = "icon" src="https://cdn4.iconfinder.com/data/icons/buffet-set/100/drink-512.png" alt="Drink">
+				<%= render 'search' %>
             </div>
             <div class= "formbdrink"> <!-- CLASS for bottom results. -->
                 <p id="pheading">RESULTS:</p>
-								<% @drinks.each do |f| %><p><b>
-								<%= f.name %>: </b>
-								<%= f.d_ingredients %></p>
-								<% end %>
+				<% @drinks.each do |f| %><p><b>
+				<%= f.name %>: </b>
+				<%= f.d_ingredients %></p>
+				<% end %>
             </div>
         </form>
     </main>

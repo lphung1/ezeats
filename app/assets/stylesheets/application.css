@@ -175,7 +175,7 @@ footer a:hover{
     margin-top: -24px;
     margin-bottom: 50px;
     vertical-align: top;
-    background: linear-gradient(#291030, #722d84);
+    background: linear-gradient(#7f47b7, #722d84);
     border-style: solid;
     border-color: black;
     border-width: 3px;
@@ -220,7 +220,7 @@ footer a:hover{
     margin-top: -24px;
     margin-bottom: 50px;
     vertical-align: top;
-    background: linear-gradient(#870000, #ff0000);
+    background: linear-gradient(#ff0000, #870000);
     border-style: solid;
     border-color: black;
     border-width: 3px;
@@ -272,6 +272,15 @@ header {
     margin: auto;
     padding:0;
     overflow: scroll;
+}
+
+/*Icon positionings for FOOD and DRINK page */
+.icon {
+    width:70px;
+    height:70px;
+    float: right;
+    padding-right: 20px;
+    margin-top: -130px;
 }
 
  /*Default text box style.*/
