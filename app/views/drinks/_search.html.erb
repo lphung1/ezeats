@@ -1,3 +1,35 @@
+<!--Partial form for search feature, searches for recipies that contain ingredients
+or by name. -->
+<style>
+  .button {
+    background-color: #FBA100; /* Orange */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 90px;
+    font-family: 'Just Another Hand', cursive;
+    text-shadow: 2px 2px #000000;
+    box-shadow: 2px 2px 10px #000000;
+    border-radius: 4px;
+  }
+  input[type=text] {
+    width: 50%;
+    box-sizing: border-box;
+    border: 3px solid #faffc6;
+    transition: 0.5s;
+    outline: none;
+    font-size: 18px;
+    background: #faffc6;
+    box-shadow: 2px 2px 5px black;
+  } 
+  input[type=text]:focus {
+    border: 3px solid #5bc3ff;
+  }
+</style>
 <%= form_tag(drinks_path, :method => "get", id: "search-form") do %>
 <%= text_field_tag :search, params[:search], placeholder: "Search for drinks here." %>
 <%= submit_tag "SEARCH >>", :name => nil, :class => 'button'%>

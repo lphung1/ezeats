@@ -1,20 +1,65 @@
-<%= form_for :drink, url: drinks_path do |f| %>
-<p>
-  <%= f.label :name %><br>
+<style> /* Random partial styling for CREATE. */
+  .button {
+    background-color: #FBA100; /* Orange */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin: 0px 50% 40px 20%;
+    font-family: 'Just Another Hand', cursive;
+    text-shadow: 2px 2px #000000;
+    box-shadow: 2px 2px 10px #000000;
+    border-radius: 4px;
+  }
+  h5 {
+    font-size: 24px;
+    font-weight: 200;
+    padding-left: 30px;
+    margin-bottom: -18px;
+  }
+  input[type=text] {
+    width: 82.5%;
+    box-sizing: border-box;
+    border: 3px solid #faffc6;
+    transition: 0.5s;
+    outline: none;
+    font-size: 18px;
+    background: #faffc6;
+    box-shadow: 2px 2px 5px black;
+    margin-left: 30px;
+  } 
+  input[type=text]:focus {
+    border: 3px solid #ffbb35;
+  }
+  textarea {
+    width: 82.5%;
+    height: 170px;
+    box-sizing: border-box;
+    border: 3px solid #faffc6;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 12px;
+    font-size: 18px;
+    background: #faffc6;
+    box-shadow: 2px 2px 5px black;
+    margin-left: 30px;
+  }
+  textarea:focus {
+    border: 3px solid #ffbb35;
+  }  
+</style>
+<div class="formrcreate">
+  <p id="pheading">CREATE A DRINK RECIPE!</p>
+  <%= form_for :drink, url: drinks_path do |f| %>
+  <h5><%= f.label :name %> for Custom Recipe:</h5><br>
   <%= f.text_field :name %>
-</p>
-
-<p>
-  <%= f.label :Ingredients %><br>
-  <%= f.text_area :d_ingredients %>
-</p>
-
-<p>
-  <%= f.label :Instructions %><br>
-  <%= f.text_area :d_instructions %>
-</p>
-
-<p>
-  <%= f.submit %>
-</p>
-<% end %>
+  <h5><%= f.label :ingredients %> Required:</h5><br>
+  <%= f.text_area :ingredients %>
+  <h5><%= f.label :instructions %> for Preparation:</h5><br>
+  <%= f.text_area :instructions %>
+  <h5><%= f.submit "SUBMIT DRINK >>", :class => 'button'%></h5>
+  <% end %>
+</div>
