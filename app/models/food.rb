@@ -4,7 +4,7 @@ class Food < ActiveRecord::Base
     if search #searches for any matches in name or ingredients column
       self.where('name LIKE ? OR ingredients LIKE ?',  "%#{search}%", "%#{search}%")
     else
-      self.all 
+      self.all
     end
   end
 

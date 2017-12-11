@@ -1,8 +1,8 @@
 <!-- Partial for all table data on HOME page. -->
 <table style="width:92%"><!-- Table for food results and stats. -->
     <tr><!-- BEGIN table heading -->
-        <th>PHOTO</th>              
-        <th>RECIPE</th>
+        <th>PHOTO</th>
+        <th>FOODS</th>
         <th>INGREDIENTS</th>
         <th>INSTRUCTIONS</th>
     </tr><!-- END table heading -->
@@ -14,4 +14,12 @@
 		<td><%= f.instructions %></td>
 	</tr><!-- END table row -->
 	<% end %>
+  <% @drinks.each do |f| %> <!-- Table fill recursion. -->
+  <tr><!-- BEGIN table row -->
+      <td><img src="https://www.goodfreephotos.com/albums/vector-images/piece-of-cheese.png" alt="Cheese" height="60px" width="50px"></td>
+      <td><%= f.name %></td>
+      <td><%= f.d_ingredients %></td>
+  <td><%= f.d_instructions %></td>
+</tr><!-- END table row -->
+<% end %>
 </table>
