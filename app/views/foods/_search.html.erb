@@ -1,6 +1,21 @@
 <!--Partial form for search feature, searches for recipies that contain ingredients
 or by name. -->
 <style>
+  .button {
+    background-color: #FBA100; /* Orange */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 90px;
+    font-family: 'Just Another Hand', cursive;
+    text-shadow: 2px 2px #000000;
+    box-shadow: 2px 2px 10px #000000;
+    border-radius: 4px;
+  }
   input[type=text] {
     width: 50%;
     box-sizing: border-box;
@@ -17,7 +32,7 @@ or by name. -->
 </style>
 <%= form_tag(foods_path, :method => "get", id: "search-form") do %>
 <%= text_field_tag :search, params[:search], placeholder: "Search for foods here." %>
-<%= submit_tag "Search", :name => nil %>
+<%= submit_tag "SEARCH >>", :name => nil, :class => 'button'%>
 <% end %>
 <!--Renders the results below. Will need to make it look pretty. -->
 
