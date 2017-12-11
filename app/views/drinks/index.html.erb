@@ -22,6 +22,10 @@
             </div>
             <div class= "formbdrink"> <!-- CLASS for bottom results. -->
                 <p id="pheading">RESULTS:</p>
+								<% @drinks.each do |f| %><p><b>
+								<%= f.name %>: </b>
+								<%= f.d_ingredients %></p>
+								<% end %>
             </div>
         </form>
     </main>
